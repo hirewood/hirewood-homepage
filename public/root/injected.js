@@ -163,16 +163,8 @@ window.addEventListener("load", async function (event) {
       .attr({ target: "_blank" })
       .click(function (event) {
         event.preventDefault();
-        $("#jitsimodal").css({ display: "block" });
+        $(".custom-modal.jitsi").css({ display: "block" });
       });
-
-    // .attr({ href: "#" })
-    // .attr({ target: "_blank" })
-    // .addClass("message-button-link")
-    // .click(function (event) {
-    //   event.preventDefault();
-    //   $("#jitsimodal").css({ display: "block" });
-    // })
   }
 
   // pages
@@ -486,7 +478,7 @@ window.addEventListener("load", async function (event) {
         .addClass("message-button-link")
         .click(function (event) {
           event.preventDefault();
-          $("#jitsimodal").css({ display: "block" });
+          $(".custom-modal.jitsi").css({ display: "block" });
         })
     );
     console.log("messages page");
@@ -494,17 +486,17 @@ window.addEventListener("load", async function (event) {
 
   // modal stuff
   // When the user clicks on <span> (x), close the modal
-  var modal = document.getElementById("jitsimodal");
-  $(".jitsimodal-close").click(function (event) {
-    $("#jitsimodal").css({ display: "none" });
+  $(".custom-modal-close").click(function (event) {
+    $(".custom-modal").css({ display: "none" });
   });
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    // Get the modal
-    if (event.target === modal) {
-      $("#jitsimodal").css({ display: "none" });
-    }
-  };
+  // var modal = document.getElementById("jitsimodal");
+  // window.onclick = function (event) {
+  //   // Get the modal
+  //   if (event.target === modal) {
+  //     $("#jitsimodal").css({ display: "none" });
+  //   }
+  // };
 
   // rename in the Settings the Transaktionen to Add-Ons
   $("#settings-tab-transactions .left-navi-link-text").text("Add-Ons");
