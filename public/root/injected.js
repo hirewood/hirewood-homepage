@@ -502,14 +502,14 @@ window.addEventListener("load", async function (event) {
   $(".custom-modal-close").click(function (event) {
     $(".custom-modal").css({ display: "none" });
   });
-  // When the user clicks anywhere outside of the modal, close it
-  // var modal = document.getElementById("jitsimodal");
-  // window.onclick = function (event) {
-  //   // Get the modal
-  //   if (event.target === modal) {
-  //     $("#jitsimodal").css({ display: "none" });
-  //   }
-  // };
+  // When the user clicks anywhere outside of the modals, close them
+  var modal = document.getElementsByClassName("custom-modal");
+  window.onclick = function (event) {
+    // Get any modal
+    if (event.target === modal[0]) {
+      $(".custom-modal").css({ display: "none" });
+    }
+  };
 
   // rename in the Settings the Transaktionen to Add-Ons
   $("#settings-tab-transactions .left-navi-link-text").text("Add-Ons");
