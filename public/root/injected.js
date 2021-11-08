@@ -506,7 +506,7 @@ window.addEventListener("load", async function (event) {
   var modal = document.getElementsByClassName("custom-modal");
   window.onclick = function (event) {
     // Get any modal
-    if (event.target === modal[0]) {
+    if (event.target === modal[0] || event.target === modal[1]) {
       $(".custom-modal").css({ display: "none" });
     }
   };
