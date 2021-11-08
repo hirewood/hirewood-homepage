@@ -1,0 +1,142 @@
+.homepage-wrapper {
+    h1,
+    .h1 {
+        @include font-size-homepage(h1);
+    }
+
+    h2,
+    .h2 {
+        @include font-size-homepage(h2);
+    }
+
+    h3,
+    .h3 {
+        @include font-size-homepage(h3);
+    }
+
+    h4,
+    .h4 {
+        @include font-size-homepage(h4);
+    }
+
+    h5,
+    .h5 {
+        @include font-size-homepage(base);
+    }
+
+    h6,
+    .h6,
+    small,
+    .text-sm {
+        @include font-size-homepage(sm);
+    }
+
+    .text-xs {
+        @include font-size-homepage(xs);
+    }
+
+    .text-xxs {
+        @include font-size-homepage(xxs);
+    }
+
+    figcaption {
+        @include font-size-homepage(figcap);
+    }
+
+    @include media("<=medium") {
+        h1 {
+            @include font-size(h1);
+        }
+
+        h2 {
+            @include font-size(h2);
+        }
+
+        h3 {
+            @include font-size(h3);
+        }
+
+        h4 {
+            @include font-size(h4);
+        }
+
+        h5 {
+            @include font-size(base);
+        }
+
+        h6 {
+            @include font-size(sm);
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    @include media(">medium") {
+        html {
+            @include font-size-homepage(base-desktop);
+        }
+
+        h1,
+        .h1 {
+            @include font-size-homepage(h1-desktop);
+        }
+
+        h2,
+        .h2 {
+            @include font-size-homepage(h2-desktop);
+        }
+
+        h3,
+        .h3 {
+            @include font-size-homepage(h3-desktop);
+        }
+
+        h4,
+        .h4 {
+            @include font-size-homepage(h4-desktop);
+        }
+
+        h5,
+        .h5 {
+            @include font-size-homepage(base-desktop);
+        }
+
+        h6,
+        .h6,
+        small,
+        .text-sm {
+            @include font-size-homepage(sm-desktop);
+        }
+
+        .text-xs {
+            @include font-size-homepage(xs-desktop);
+        }
+
+        .text-xxs {
+            @include font-size-homepage(xxs-desktop);
+        }
+
+        figcaption {
+            @include font-size-homepage(figcap-desktop);
+        }
+
+        blockquote {
+            @include font-size-homepage(bquote-desktop);
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+// alpha: (56px, 62px, -0.3px),
+// beta: (48px, 54px, -0.3px),
+// gamma: (36px, 42px, -0.3px),
+// delta: (28px, 34px, -0.1px),
+// epsilon: (24px, 30px, -0.1px),
+// zeta: (20px, 28px, -0.1px),
+// eta: (16px, 24px, -0.1px),
+// theta: (14px, 22px, null)

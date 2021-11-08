@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- For the Page -->
+    <style>
+      .accordion {
+        background-color: #f5f5f5;
+        color: #444;
+        cursor: pointer;
+        padding: 6px 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #eee;
+      }
+
+      .accordion:after {
+        content: "\002B";
+        color: #000;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 25px;
+      }
+
+      .accordion h2 {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .panel p a {
+        text-decoration: underline;
+      }
+    </style>
+
+    <h1>FAQ</h1>
+
+    <h3>Für Unternehmen</h3>
+
+    <button class="accordion">
+      <h2>Wie funktioniert RECSCOUT?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Kostenfrei anmelden und Ihr Profil einrichten (alternativ übernehmen wir
+        dies auch kostenfrei für Sie, sprechen Sie uns gerne an). Danach können
+        Sie direkt in Ihre Suche starten. Nutzen Sie dazu unsere Schlagwortsuche
+        oder die Filter. Wenn Sie einen Personalberater anfragen eröffnet sich
+        für beide der Chat. Hier können Sie zum Beispiel erste Details
+        absprechen, Video Calls starten, Aufträge erteilen / verwalten und Daten
+        transferieren.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Welchen Mehrwert bietet mir RECSCOUT?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Über RECSCOUT haben Sie die Möglichkeit, auf einer Plattform Ihre
+        Zusammenarbeit mit Recruitern / Personalberatern transparent und
+        proaktiv zu steuern.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wer kann meinen Unternehmensaccount auf RECSCOUT sehen?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Erst einmal niemand - außer Sie selbst. Ihr Account ist nicht öffentlich
+        einsehbar. Erst wenn Sie einen Personalberater über RESCOUT
+        kontaktieren, kann dieser Personalberater Ihr Unternehmensprofil sehen
+        und Ihnen antworten. Auch wenn Sie einem Berater per Klick aktiv folgen,
+        können andere Sie als “Follower” sehen.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Welche Kosten kommen auf mein Unternehmen zu?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Keine. Unser Service ist für Unternehmen kostenlos. Genießen Sie den
+        kostenlosen Zugriff auf RECSCOUT.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Habe ich vertragliche Laufzeiten?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Nein. Es gibt keine vertraglichen Laufzeiten. Lediglich laufende
+        Besetzungsprozesse müssen bis zum Abschluss auf RECSCOUT durchgeführt
+        werden.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wie kann ich Rechnungen verarbeiten?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Von Personalberatern erhalten Sie digitale Rechnungen. Diese können Sie
+        mit wenigen Klicks ausgleichen und ein “Social Cashback”-Projekt
+        auswählen, an welches RECSCOUT einen Betrag zahlten. In der digital
+        gesendet Rechnung, befindet sich zudem eine traditionelle Rechnung per
+        PDF, um Rechnungen auch individuell verarbeiten zu können.
+        <b>Wichtig</b> ist hierbei, dass Sie in Ihrem Profil den richtigen
+        Kontakt aus Ihrem Unternehmen angeben, an den die Rechnungen versendet
+        werden sollen.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Gehe ich einen Vertrag mit RECSCOUT ein?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Nein. Für RECSCOUT zählen die AGB. RECSCOUT ist lediglich der Vermittler
+        zwischen Firmen mit Personalbedarf und Personalberatungen.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>
+        Fallen Kosten für mich oder mein Unternehmen an, wenn RECSCOUT je
+        erfolgreicher Stellenbesetzung ökologisch nachhaltige Projekte
+        unterstützt?
+      </h2>
+    </button>
+    <div class="panel">
+      <p>
+        Nein, diese Kosten fallen nicht für Sie an. Gerne können Sie aber damit
+        werben, dass Sie und Ihr Unternehmen mit der Arbeit über RECSCOUT etwas
+        für Ihren ökologischen Fußabdruck leisten. Denn: Je Stellenbesetzung
+        wird ein Betrag in ein Wald-Renaturierungs-Projekt sowie einen Social
+        Cashback je gesendeter Rechnung investiert.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Was benötige ich für meinen Firmen Account?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Sie legen Ihren Account über Ihre E-Mail-Adresse an und ergänzen ihn mit
+        ein paar Angaben zu Ihrer Firma. Auf unserem Medium Blog haben wir ein
+        paar Hilfestellungen hierzu, hier klicken.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wie funktioniert die Weiterleitung zu den Kooperationspartnern?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        RECSCOUT leitet Sie über Links zu unseren Kooperationspartnern weiter.
+        Bei der Weiterleitung werden Ihre Daten nicht weitergegeben. Sollten Sie
+        sich für einen Service unserer Kooperationspartner entscheiden, findet
+        eine separate Dateneingabe statt.
+      </p>
+    </div>
+
+    <h3>Für Recruiter / Personaldienstleiser</h3>
+
+    <button class="accordion">
+      <h2>Wie funktioniert RECSCOUT?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Kostenfrei anmelden, Ihr Profil und Ihre Beraterkarte einrichten.
+        Parallel erhalten Sie von uns eine Email zur digitalen Aufnahme
+        bestehender Referenzen Ihrer Kunden. Hier können Sie kurz und knapp
+        Referenzgeber eintragen. Die eingehenden Bewertungen schreiben wir Ihrem
+        Profil gut, sodass Sie gleich bei Start auf RECSCOUT konkurrenzfähig
+        sind. Sobald Sie von einem potenziellen Auftraggeber angefragt werden,
+        eröffnet sich der Chat über den Sie zum Beispiel erste Details
+        absprechen, Video Calls starten, Aufträge annehmen / verwalten und Daten
+        transferieren können.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Welchen Mehrwert bietet mir RECSCOUT?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        RECSCOUT erweitert Ihre Akquisemöglichkeiten und bietet Ihnen committete
+        Kunden statt Kaltakquise!
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Benötige ich ein Profil, um RECSCOUT zu nutzen?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Ja. Um alle Funktionen von RECSCOUT zu nutzen, ist eine Anmeldung
+        erforderlich. Diese geht einfach und ist kostenfrei. Eine Anmeldung ist
+        zum Beispiel auch über Ihr LinkedIn Profil möglich.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>
+        Welche Kosten kommen auf mich als Recruiter / Personaldienstleister zu?
+      </h2>
+    </button>
+    <div class="panel">
+      <p>
+        Ihr Profil, Ihre Beraterkarte und die Plattformsuche sind komplett
+        kostenfrei. Bei erfolgreicher Beauftragung durch ein Unternehmen (bzw.
+        der erfolgreichen Besetzung der beauftragten Suche) über RECSCOUT fällt
+        eine Fee an.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wie hoch ist meine Fee an RECSCOUT?</h2>
+    </button>
+    <div class="panel">
+      <p>Wir berechnen 12% von Ihrem Beraterhonorar.</p>
+    </div>
+
+    <button class="accordion">
+      <h2>
+        Wieso soll ich mich für RECSCOUT entscheiden und einen Teil meines
+        Honorars investieren?
+      </h2>
+    </button>
+    <div class="panel">
+      <p>
+        Trotz der bei Projektabschluss anfallenden Fee an RECSCOUT, bietet
+        unsere Plattform einen einzigartigen Mehrwert für Sie, zusätzliche
+        Aufträge zu generieren. Sie werden von potenziellen Kunde gezielt
+        gesucht und gefunden, sparen Zeit in der Kaltakquise, genießen warme
+        Leads und nutzen so alle Vertriebspotenziale, die der Markt hergibt.
+        RECSCOUT eröffnet Ihnen die Chance, sich und Ihre Expertise transparent
+        zu platzieren und nachhaltig auf dem Markt zu positionieren - und dies
+        ohne Mehraufwand. Zudem arbeiten wir laufend an neuen technischen
+        geschäftsfördernden Funktionen, die Sie nach Bedarf für sich einsetzen
+        können.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wie kann ich Rechnungen an Unternehmen verarbeiten und stellen?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Sie können digitale Rechnungen an Unternehmen über Ihren RECSCOUT
+        Account versenden (laden Sie Ihre eigene Rechnung hierfür einfach über
+        den Punkt “Transaktionen” hoch). Die Rechnungen können Sie mit wenigen
+        Klicks an Ihren Auftraggeber senden und ein “Social Cashback”-Projekt
+        auswählen, an welches RECSCOUT einen Betrag zahlt. In der digital
+        versendet Rechnung befindet sich zudem eine traditionelle Rechnung per
+        PDF, um Rechnungen auch individuell verarbeiten zu können. Zudem bieten
+        wir Personalberatern die Möglichkeit des Factoring an. Sie können Ihre
+        Rechnungen hochladen und erhalten Ihr Honorar bereits in wenigen
+        Stunden. Unser Partner übernimmt die Forderungen gegenüber Ihrem
+        Auftraggeber. Ihr Auftraggeber erhält ein Zahlungsziel-Zeitfenster bis
+        zu 90 Tagen. Für die Nutzung des Factoring wird Ihnen ein kleiner Teil
+        Ihres Honorar von unserem Factoring-Partner abgezogen.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Welche AGB gelten für mich?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Es gelten die AGB von RECSCOUT und die von Ihnen als Recruiter /
+        Personaldienstleister in der Zusammenarbeit mit Ihren Auftraggebern.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Habe ich vertragliche Laufzeiten?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        Nein. Es gibt keine vertraglichen Laufzeiten. Lediglich laufende
+        Beauftragungen müssen bis zum Abschluss auf RECSCOUT durchgeführt
+        werden.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>
+        Fallen Kosten für mich oder mein Unternehmen an, wenn RECSCOUT je
+        erfolgreicher Stellenbesetzung ökologisch nachhaltige Projekte
+        unterstützt?
+      </h2>
+    </button>
+    <div class="panel">
+      <p>
+        Nein, diese Kosten fallen nicht für Sie an. Gerne können Sie aber damit
+        werben, dass Sie und Ihr Unternehmen mit der Arbeit über RECSCOUT etwas
+        für Ihren ökologischen Fußabdruck leisten. Denn: Je Stellenbesetzung
+        wird ein Betrag in ein Wald-Renaturierungs-Projekt sowie einen Social
+        Cashback je gesendeter Rechnung investiert.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wie kann ich mich vor negativen Bewertungen schützen?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        RECSCOUT gibt Ihnen die Chance, Ihre Spezialisierung zu präsentieren.
+        Zeigen Sie Auftraggebern Ihre Stärken auf und belegen Sie diese durch
+        Ihre tägliche Arbeit. So werden Sie schlechte Bewertungen umgehen. Sie
+        können nur nach einem Projektabschluss bewertet werden, dazu
+        kontaktieren wir Ihre Auftraggeber. Zudem bieten wir Ihnen die digitale
+        Möglichkeit, Referenzen von vorherigen Auftraggebern einzuholen.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>
+        Ich arbeite für eine größe Personalberatung, muss ich etwas beachten?
+      </h2>
+    </button>
+    <div class="panel">
+      <p>
+        Nein. Sie melden sich als Einzelperson / Berater an. In Ihrem Profil
+        können Sie auf Ihren Arbeitgeber verweisen. Wir setzen auf einzelne
+        Accounts, damit Sie Ihre Bewertungen nicht verlieren. Unabhängig davon,
+        wie und bei welchem Arbeitgeber sich die berufliche Karriere entwickelt.
+      </p>
+    </div>
+
+    <button class="accordion">
+      <h2>Wie funktioniert die Weiterleitung zu den Kooperationspartnern?</h2>
+    </button>
+    <div class="panel">
+      <p>
+        RECSCOUT leitet Sie über Links zu unseren Kooperationspartnern weiter.
+        Bei der Weiterleitung werden Ihre Daten nicht weitergegeben. Sollten Sie
+        sich für einen Service unserer Kooperationspartner entscheiden, findet
+        eine separate Dateneingabe statt.
+      </p>
+    </div>
+
+    <!-- FOR THE PAGE END --->
+  </body>
+  <link
+    href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
+    rel="stylesheet"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://sajadghawami.github.io/recscout-homepage/public/root/lz-string.min.js"></script>
+  <script src="https://sajadghawami.github.io/recscout-homepage/public/root/injected.js"></script>
+  <link
+    href="https://sajadghawami.github.io/recscout-homepage/public/root/injected.css"
+    rel="stylesheet"
+  />
+
+  <script type="text/javascript">
+    // accordion
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</html>

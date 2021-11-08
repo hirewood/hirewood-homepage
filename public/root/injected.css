@@ -1,0 +1,307 @@
+/* this is directly injected into the page */
+
+/* change font size for ipad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 0.75rem;
+    }
+}
+
+/* details tab list fix in search */
+.home-list-details-with-image {
+    display: flex;
+}
+
+/* show the underline for both */
+#privacy_link,
+#terms_link {
+    text-decoration: underline;
+}
+
+/* general pages*/
+/* helper css */
+.display-none {
+    display: none !important;
+}
+
+/* notifications */
+.ajax-notice,
+.ajax-warning,
+.flash-notice,
+.flash-warning,
+.ajax-update-notice {
+    background: #79d1c3;
+    color: #fff;
+}
+
+/* this is for the about pages */
+.left-navi {
+    display: none;
+}
+.left-navi-section.about-section {
+    width: 100%;
+    margin-left: 0;
+}
+
+.button.search-button {
+    color: #fff;
+}
+
+/* navigationbar */
+.jitsi-button img {
+    width: 25px;
+    height: auto;
+}
+.Avatar:hover {
+    cursor: pointer;
+}
+.Menu:hover {
+    cursor: pointer;
+}
+
+/* remove the button on mobile, because it is visible in the menu */
+a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
+    display: none;
+}
+
+/*listings */
+.listing-author-name {
+    height: auto;
+    line-height: 1em;
+}
+
+.listing-author-name-link {
+    overflow: visible;
+    white-space: normal;
+}
+
+/* message buttons */
+a.message-button-link {
+    color: #fff;
+    background-color: #000;
+    border-radius: 0.3125em;
+    text-align: center;
+    margin: 0;
+    padding: 0 1.5em;
+    line-height: 1.15;
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+    margin: 0;
+}
+
+/* top buttons */
+.message-selection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-selection-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-selection-column a {
+    margin: 5px;
+}
+
+/* bottom wrapper for videochat start  */
+
+.message-form-submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* transaction buttons */
+.transaction-button {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.transaction-explainer {
+    flex: 5;
+    margin-left: 15px;
+}
+
+.transaction-explainer h5 {
+    margin-top: 0;
+}
+
+.transaction-button-wrapper {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+a.transaction-button-link {
+    color: #fff;
+    background-color: #79d1c3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+
+a.transaction-button-link:nth-of-type(2) {
+    margin-left: 15px;
+}
+
+/* profile */
+.profile-link {
+    text-decoration: underline !important;
+}
+
+.profile-link:hover {
+    cursor: pointer;
+}
+
+/* The Modal */
+#jitsimodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.jitsimodal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    position: relative;
+}
+
+.jitsimodal-inner-wrapper {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+.jitsimodal-inner-wrapper p {
+    display: flex;
+}
+
+.jitsimodal-inner-wrapper svg {
+    /* margin-bottom: 0; */
+    margin-right: 15px;
+}
+
+/* The Close Button */
+.jitsimodal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.jitsimodal-close:hover,
+.jitsimodal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* notifications */
+#email_about_new_payments,
+label[for="email_about_new_payments"] {
+    display: none !important;
+}
+#email_about_testimonial_reminders,
+label[for="email_about_testimonial_reminders"] {
+    display: none !important;
+}
+#email_about_new_received_testimonials,
+label[for="email_about_new_received_testimonials"] {
+    display: none !important;
+}
+#email_about_new_comments_to_own_listing,
+label[for="email_about_new_comments_to_own_listing"] {
+    display: none !important;
+}
+#email_when_conversation_accepted,
+label[for="email_when_conversation_accepted"] {
+    display: none !important;
+}
+#email_when_conversation_rejected,
+label[for="email_when_conversation_rejected"] {
+    display: none !important;
+}
+#email_about_confirm_reminders,
+label[for="email_about_confirm_reminders"] {
+    display: none !important;
+}
+#email_about_completed_transactions,
+label[for="email_about_completed_transactions"] {
+    display: none !important;
+}
+
+/* --------- */
+/* rating  */
+/* -------- */
+
+.comment {
+    padding-left: 1.5em !important;
+}
+.comment .avatar {
+    display: none;
+}
+
+.testimonial-message {
+    display: none;
+}
+
+.rating-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rating-question {
+    margin-bottom: 5;
+}
+
+.rating-scale {
+    display: flex;
+}
+
+.rating-scale button {
+    background-color: #fff;
+    border: none;
+
+    width: 32px;
+    height: 32px;
+
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_empty.png);
+}
+
+.rating-scale button.selected {
+    background-image: url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_filled.png);
+}
+
+/* dont display at first paint */
+.comment h3 a {
+    display: none;
+}
+
+/* settings */
+/* remove the description */
+.left-navi-section.settings-section p:first-of-type {
+    display: none;
+}
+
+/* footer */
+.footer__logo-image {
+    max-width: 300px;
+}
