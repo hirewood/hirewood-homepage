@@ -167,9 +167,17 @@ window.addEventListener("load", async function (event) {
       });
 
     // information button
-    $(".toggle-container.home-toolbar-toggle-container").after(
+    $("#home_toolbar-select-share-type").after(
       '<a class="search-information-button">i</a>'
     );
+    // open the modal on click
+    $(".search-information-button")
+      .attr({ href: "#" })
+      .attr({ target: "_blank" })
+      .click(function (event) {
+        event.preventDefault();
+        $(".custom-modal.search-information").css({ display: "block" });
+      });
   }
 
   // pages
