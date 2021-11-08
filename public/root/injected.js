@@ -165,6 +165,11 @@ window.addEventListener("load", async function (event) {
         event.preventDefault();
         $(".custom-modal.jitsi").css({ display: "block" });
       });
+
+    // information button
+    $(".toggle-container.home-toolbar-toggle-container").after(
+      '<a class="search-information-button">i</a>'
+    );
   }
 
   // pages
