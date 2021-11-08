@@ -392,7 +392,7 @@ window.addEventListener("load", async function (event) {
     // create the top buttons
     $("#reply_form").before(
       $(
-        "<p class='message-avatar-padding'>Beim klicken erzeugen wir einen Platzhaltertext der nochmal angepasst werden kann, bevor er abgeschickt wird.</p>"
+        "<p class='message-avatar-padding'>Beim Klicken erzeugen wir einen Platzhaltertext der nochmal angepasst werden kann, bevor er abgeschickt wird.</p>"
       )
     );
 
@@ -495,7 +495,7 @@ window.addEventListener("load", async function (event) {
   // modal stuff
   // When the user clicks on <span> (x), close the modal
   var modal = document.getElementById("jitsimodal");
-  $(".modal-close").click(function (event) {
+  $(".jitsimodal-close").click(function (event) {
     $("#jitsimodal").css({ display: "none" });
   });
   // When the user clicks anywhere outside of the modal, close it
