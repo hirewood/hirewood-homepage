@@ -7,6 +7,11 @@
     }
 }
 
+/* remove the all entries/alle einträge in the sub-header in search */
+#home_toolbar-select-share-type {
+    display: none;
+}
+
 /* details tab list fix in search */
 .home-list-details-with-image {
     display: flex;

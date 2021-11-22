@@ -135,16 +135,11 @@ window.addEventListener("load", async function (event) {
   /**
    * General
    */
-  // change menu name
-  // $(".MenuPriority .MenuLabel").contents()[2].nodeValue = "Mehr";
 
   const isInfoPages =
     splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
 
-  if (isInfoPages) {
-    // make wrapper fullwidth
-    // $(".wrapper").css({ maxWidth: "100%" });
-  } else {
+  if (!isInfoPages) {
     // add the sidebar if not in about
     $(".left-navi").css({ display: "inline-block" });
   }
@@ -181,6 +176,26 @@ window.addEventListener("load", async function (event) {
   }
 
   // pages
+
+  // user feedback
+  // load the script conditionally only if its not the user feedback page
+  const isUserFeedbackPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "user_feedbacks" &&
+    splittedPathname[splittedPathnameArrayPosition] === "new";
+
+  if (!isUserFeedbackPage) {
+    console.log("isUserFeedbackPage");
+    // add hubspot if its not the user-feedback page
+    var head = document.getElementsByTagName("head")[0];
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.id = "hs-script-loader";
+    script.async = true;
+    script.defer = true;
+    script.src = "//js.hs-scripts.com/9485849.js";
+    head.appendChild(script);
+  }
+
   // settings
   const isSettingsPage =
     splittedPathname[splittedPathnameArrayPosition] === "settings";
