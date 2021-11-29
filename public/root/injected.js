@@ -183,7 +183,7 @@ window.addEventListener("load", async function (event) {
 
   const hasCategoryQuery = getParameterByName(
     window.location.search,
-    "category"
+    "?category"
   );
 
   console.log("hasCategoryQuery", hasCategoryQuery);
