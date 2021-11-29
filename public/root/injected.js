@@ -177,6 +177,14 @@ window.addEventListener("load", async function (event) {
 
   // pages
 
+  // index page when logged in
+  const isIndexSearchPage =
+    splittedPathname[0] === "" && splittedPathname[1] === "";
+
+  if (isIndexSearchPage) {
+    this.window.location = "/?category=berater-in";
+  }
+
   // user feedback
   // load the script conditionally only if its not the user feedback page
   const isUserFeedbackPage =
