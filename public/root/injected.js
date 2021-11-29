@@ -181,8 +181,15 @@ window.addEventListener("load", async function (event) {
   const isIndexSearchPage =
     splittedPathname[0] === "" && splittedPathname[1] === "";
 
-  if (isIndexSearchPage) {
-    // this.window.location = "/?category=berater-in";
+  const hasCategoryQuery = getParameterByName(
+    window.location.search,
+    "category"
+  );
+
+  console.log("hasCategoryQuery", hasCategoryQuery);
+
+  if (isIndexSearchPage && !hasCategoryQuery) {
+    this.window.location = "/?category=berater-in";
   }
 
   // user feedback
