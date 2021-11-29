@@ -186,9 +186,7 @@ window.addEventListener("load", async function (event) {
     "?category"
   );
 
-  console.log("hasCategoryQuery", hasCategoryQuery);
-
-  if (isIndexSearchPage && !hasCategoryQuery) {
+  if (isIndexSearchPage && !hasCategoryQuery && isUserLoggedIn) {
     this.window.location = "/?category=berater-in";
   }
 
