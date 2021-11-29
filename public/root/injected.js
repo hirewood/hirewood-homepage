@@ -182,7 +182,7 @@ window.addEventListener("load", async function (event) {
     splittedPathname[0] === "" && splittedPathname[1] === "";
 
   if (isIndexSearchPage) {
-    this.window.location = "/?category=berater-in";
+    // this.window.location = "/?category=berater-in";
   }
 
   // user feedback
