@@ -87,8 +87,11 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
     white-space: normal;
 }
 
-.row.checkbox-group {
-    width: 166%;
+/* change the width of the content in listings */
+@media only screen and (min-width: 768px) {
+    .row.checkbox-group {
+        width: 166%;
+    }
 }
 
 /* message buttons */
