@@ -76,7 +76,7 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
     display: none;
 }
 
-/*listings */
+/* inside listings */
 .listing-author-name {
     height: auto;
     line-height: 1em;
@@ -85,6 +85,10 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 .listing-author-name-link {
     overflow: visible;
     white-space: normal;
+}
+
+.row.checkbox-group {
+    width: 166%;
 }
 
 /* message buttons */
