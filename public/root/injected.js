@@ -585,7 +585,7 @@ window.addEventListener("load", async function (event) {
     );
     // description
     $(".left-navi-section h2").after(
-      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in weniger Schritten registrieren können.</p><p>Informationen zum Payment über unsere Partner finden Sie <a href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
+      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in weniger Schritten registrieren können.</p><p style="margin-bottom: 45px">Außerdem finden Sie hier weitere Informationen zum Payment über unsere Partner <a href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
     );
   }
 
