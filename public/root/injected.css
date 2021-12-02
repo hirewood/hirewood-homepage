@@ -88,10 +88,25 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 }
 
 /* change the width of the content in listings */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1350px) {
+    .row.checkbox-group {
+        width: 145%;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
     .row.checkbox-group {
         width: 166%;
     }
+}
+
+.row.checkbox-group {
+    margin-top: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.checkbox-option.selected {
+    margin-bottom: 0.25em;
 }
 
 /* message buttons */
