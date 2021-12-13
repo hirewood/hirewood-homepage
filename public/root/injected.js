@@ -181,13 +181,21 @@ window.addEventListener("load", async function (event) {
   const isIndexSearchPage =
     splittedPathname[0] === "" && splittedPathname[1] === "";
 
+  // check if we are on the main page with all the listings
   const hasCategoryQuery = getParameterByName(
     window.location.search,
     "?category"
   );
 
-  if (isIndexSearchPage && !hasCategoryQuery && isUserLoggedIn) {
-    this.window.location = "/?category=berater-in";
+  const hasSearchQuery = getParameterByName(window.location.search, "?q");
+
+  if (isIndexSearchPage && isUserLoggedIn) {
+    // if (hasSearchQuery) {
+    //   // hide the selection since it doesnt work anyway
+    // } else
+    if (!hasSearchQuery && !hasCategoryQuery) {
+      this.window.location = "/?category=berater-in";
+    }
   }
 
   // user feedback
@@ -587,7 +595,7 @@ window.addEventListener("load", async function (event) {
     );
     // description
     $(".left-navi-section h2").after(
-      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in weniger Schritten registrieren können.</p><p style="margin-bottom: 45px">Außerdem finden Sie hier weitere Informationen zum Payment über unsere Partner <a href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
+      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in wenigen Schritten registrieren können.</p><p style="margin-bottom: 45px">Außerdem finden Sie hier weitere Informationen zum Payment über unsere Partner <a href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
     );
   }
 
