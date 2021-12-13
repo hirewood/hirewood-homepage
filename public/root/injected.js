@@ -439,7 +439,7 @@ window.addEventListener("load", async function (event) {
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Auftrag vergeben</a>")
+            $("<a>Auftrag<br/>vergeben</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
@@ -452,7 +452,7 @@ window.addEventListener("load", async function (event) {
               })
           )
           .append(
-            $("<a>Auftrag storniert</a>")
+            $("<a>Auftrag<br/>storniert</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
@@ -465,7 +465,7 @@ window.addEventListener("load", async function (event) {
               })
           )
           .append(
-            $("<a>Auftrag on hold</a>")
+            $("<a>Auftrag<br/>on hold</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
@@ -483,7 +483,7 @@ window.addEventListener("load", async function (event) {
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Vakanz besetzt</a>")
+            $("<a>Vakanz<br/>besetzt</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
@@ -496,7 +496,7 @@ window.addEventListener("load", async function (event) {
               })
           )
           .append(
-            $("<a><div>Rechnung senden</div></a>")
+            $("<a><div>Rechnung<br/>senden</div></a>")
               .attr({
                 href: "https://portal.payactive.io/dashboard/payments?action=new&agent=6103cee7c82e412669d255a8",
               })
@@ -504,7 +504,7 @@ window.addEventListener("load", async function (event) {
               .addClass("message-button-link")
           )
           .append(
-            $("<a>Datentransfer</a>")
+            $("<a>Datentransfer<br/>starten</a>")
               .attr({ href: "https://app.novospace.com/#/login" })
               .attr({ target: "_blank" })
               .addClass("message-button-link")
