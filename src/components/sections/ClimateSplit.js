@@ -74,14 +74,22 @@ const FeaturesSplit = ({
                 {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Was uns stört
                 </div> */}
-                <Image
-                  src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/climate_action.jpg"
-                  }
-                  alt="Features split 01"
-                  width={528}
-                  height={396}
-                />
+                <div>
+                  <a
+                    href="https://wtca.lfca.earth/de/e/recscout"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src={
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/climate_action.jpg"
+                      }
+                      alt="Features split 01"
+                      // width={528}
+                      // height={396}
+                    />
+                  </a>
+                </div>
                 <h2 className="mt-0 mb-12">Gemeinsam für den Klimaschutz.</h2>
                 <h6
                   className="m-6"
