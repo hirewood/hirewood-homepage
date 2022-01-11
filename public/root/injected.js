@@ -195,6 +195,9 @@ window.addEventListener("load", async function (event) {
     // } else
     if (!hasSearchQuery && !hasCategoryQuery) {
       this.window.location = "/?category=berater-in";
+    } else {
+      // show the search bar
+      $(".home-categories-main:first-of-type").css({ display: "block" });
     }
   }
 
