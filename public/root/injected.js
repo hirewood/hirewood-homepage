@@ -89,8 +89,11 @@ const getParameterByName = (query, variable) => {
   if (query) {
     const vars = query.split("&");
     for (let i = 0; i < vars.length; i++) {
-      // remove the question mark and split
-      const pair = vars[i].replace(/^?/, "").split("=");
+      // split
+      const pair = vars[i].split("=");
+      // remove the question mark if present, else return the whole string
+      pair[0] =
+        pair[0].length && pair[0][0] === "?" ? pair[0].slice(1) : pair[0];
       if (decodeURIComponent(pair[0]) === variable) {
         return decodeURIComponent(pair[1]);
       }
