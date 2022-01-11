@@ -190,14 +190,10 @@ window.addEventListener("load", async function (event) {
   const hasSearchQuery = getParameterByName(window.location.search, "?q");
 
   if (isIndexSearchPage && isUserLoggedIn) {
-    // if (hasSearchQuery) {
-    //   // hide the selection since it doesnt work anyway
-    // } else
-    if (!hasSearchQuery && !hasCategoryQuery) {
-      this.window.location = "/?category=berater-in";
-    } else {
-      // show the search bar
+    if (hasSearchQuery) {
       $(".home-categories-main:first-of-type").css({ display: "block" });
+    } else if (!hasSearchQuery && !hasCategoryQuery) {
+      this.window.location = "/?category=berater-in";
     }
   }
 
