@@ -181,13 +181,16 @@ window.addEventListener("load", async function (event) {
   const isIndexSearchPage =
     splittedPathname[0] === "" && splittedPathname[1] === "";
 
-  // check if we are on the main page with all the listings
-  const hasCategoryQuery = getParameterByName(
-    window.location.search,
-    "?category"
-  );
+  // remove question mark from location if there is one
+  var cleanedQuery =
+    window.location.search.length && window.location.search[0] === "?"
+      ? window.location.search.slice(1)
+      : window.location.search;
 
-  const hasSearchQuery = getParameterByName(window.location.search, "?q");
+  // check if we are on the main page with all the listings
+  const hasCategoryQuery = getParameterByName(cleanedQuery, "category");
+
+  const hasSearchQuery = getParameterByName(cleanedQuery, "q");
 
   if (isIndexSearchPage && isUserLoggedIn) {
     if (hasSearchQuery) {
