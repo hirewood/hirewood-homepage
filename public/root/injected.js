@@ -163,7 +163,7 @@ window.addEventListener("load", async function (event) {
 
     // information button
     $("#home_toolbar-select-share-type").after(
-      '<a class="search-information-button">i</a>'
+      '<a class="search-information-button">Suchtipp</a>'
     );
     // open the modal on click
     $(".search-information-button")
