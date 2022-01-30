@@ -189,7 +189,6 @@ window.addEventListener("load", async function (event) {
 
   // check if we are on the main page with all the listings
   const hasCategoryQuery = getParameterByName(cleanedQuery, "category");
-
   const hasSearchQuery = getParameterByName(cleanedQuery, "q");
 
   if (isIndexSearchPage && isUserLoggedIn) {
@@ -245,18 +244,25 @@ window.addEventListener("load", async function (event) {
         "<a href='https://recscout.medium.com/musterprofil-unternehmen-58112506312b' target='_blank' class='profile-link'><small>Mustervorlage für Unternehmen</small></a>"
       )
     );
+    $("#person_description").before($("<br/>"));
+    $("#person_description").before(
+      $(
+        "<a href='https://recscout.medium.com/musterprofil-kandidat-innen-143a9055ab30' target='_blank' class='profile-link'><small>Mustervorlage für Kandidaten</small></a>"
+      )
+    );
+
     // add the placeholder
     $("#person_description").css({ height: "300px", resize: "auto" });
     $("#person_description").prop(
       "placeholder",
-      "Für Recruiter (Personalberater):\nIn Ihrem Profil stehen Sie als Person im Mittelpunkt. Skizzieren Sie Ihre Expertise als Personalberater, Ihren Kundenfokus sowie weitere relevante Spezialisierungen. Eine Mustervorlage finden Sie in dem Link über diesem Textfeld.\n\nFür Unternehmen:\nSie entscheiden selbst, wann und mit welchen  Personalberatern Sie in Kontakt treten.  Stellen Sie Ihr Unternehmen für den weiteren Verlauf kurz vor:                                Empfehlung:   „Über uns” Text der Unternehmenshomepage einfügen. Ihr Profil wird nicht veröffentlicht. Ihre Informationen werden nur für von Ihnen kontaktierte Recruiter sichtbar."
+      "Für Personalberater und Kandidaten:\nIn Ihrem Profil stehen Sie als Person im Mittelpunkt. Skizzieren Sie Ihre Expertise als Personalberater oder Kandidat, Ihren Fokus sowie weitere relevante Spezialisierungen. Eine Mustervorlage finden Sie in dem Link über diesem Textfeld.\n\nFür Unternehmen:\nSie entscheiden selbst, wann und mit welchen  Personalberatern Sie in Kontakt treten.  Stellen Sie Ihr Unternehmen für den weiteren Verlauf kurz vor:                                Empfehlung:   „Über uns” Text der Unternehmenshomepage einfügen. Ihr Profil wird nicht veröffentlicht. Ihre Informationen werden nur für von Ihnen kontaktierte Recruiter sichtbar."
     );
 
     // image upload
     $("#avatar_file").before($("<br/>"));
     $("#avatar_file").before(
       $(
-        "<small>Als Berater laden Sie ein Business Portraitfoto von Ihnen als Person hoch.</small>"
+        "<small>Als Berater oder Kandidat laden Sie ein Business Portraitfoto von Ihnen als Person hoch.</small>"
       )
     );
     $("#avatar_file").before($("<br/>"));

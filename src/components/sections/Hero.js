@@ -72,7 +72,7 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Finden Sie den besten Personalberater für Ihre Vakanz.
+              Work together.
             </h1>
             {/* <br /> */}
             {/* <span className="text-color-primary">- Komm recscouten</span> */}
@@ -82,8 +82,9 @@ const Hero = ({
                 data-reveal-delay="400"
                 style={{ fontWeight: 400 }}
               >
-                Wir verknüpfen HR-Teams und Personalberater auf der Grundlage
-                von Technologien und Daten - komm' recscouten.
+                Um die besten Teams aufzubauen, vernetzen wir Unternehmen mit
+                passenden Personalberater:innen und Kandidat:innen über unsere
+                Plattform.
               </p>
               <div
                 className="reveal-from-bottom"
@@ -98,7 +99,7 @@ const Hero = ({
                     href="/de/signup"
                     size="large"
                   >
-                    Jetzt recscouten
+                    Hier registrieren
                   </Button>
                   <Button
                     color="primary"

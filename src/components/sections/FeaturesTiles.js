@@ -73,9 +73,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Kostenlose Anmeldung</h4>
                   <p className="m-0">
-                    Für Unternehmen ist die Nutzung kostenfrei. RECSCOUT
-                    berechnet Personalberatern bei erfolgreicher Vermittlung 12%
-                    des Honorars.
+                    Für Unternehmen, Kandidat:innen und Personalberater:innen
+                    ist die Nutzung kostenfrei. Erst bei erfolgreicher
+                    Stellenbesetzung fällt eine Fee an.
                   </p>
                 </div>
               </div>
@@ -99,9 +99,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Matching</h4>
                   <p className="m-0">
-                    Vermeiden Sie Risiken. Finden und beauftragen Sie über
-                    unsere spezifische Suchfunktion den richtigen Berater für
-                    Ihre Vakanz.
+                    Vermeiden Sie Risiken. Finden Sie über unsere spezifische
+                    Suchfunktion die richtige Berater:in oder Kandidat:in für
+                    die Vakanz.
                   </p>
                 </div>
               </div>
@@ -150,8 +150,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0">
-                    Die gesamte Kommunikation erfolgt über RECSCOUT - Der
-                    Erstkontakt kann nur durch Unternehmen erfolgen.
+                    Die gesamte Kommunikation kann über die Plattform erfolgen.
+                    Unternehmen und Kandidat:innen sind bis zu einem direkten
+                    Austausch anonym.
                   </p>
                 </div>
               </div>
@@ -197,8 +198,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Zahlungen</h4>
                   <p className="m-0">
-                    Zahlungen werden bequem digital abgewickelt. Nutzen Sie
-                    moderne E-Rechnungen oder Factoring.
+                    Zahlungen können bequem digital, oder wie für Sie gewohnt,
+                    abgewickelt werden. Nutzen Sie moderne E-Rechnungen oder
+                    Factoring.
                   </p>
                   <Button
                     tag="a"

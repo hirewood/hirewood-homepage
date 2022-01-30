@@ -24,19 +24,21 @@ const Home = () => {
         imageFill
         className="illustration-section-02"
       />
-      <CircularSplit
+      {/* Der RECSCOUT-Kreislauf */}
+      {/* <CircularSplit
         invertMobile
         // topDivider
         imageFill
         className="illustration-section-02"
-      />
+      /> */}
       <FeaturesTiles className="illustration-section-01" />
-      <FutureSplit
+      {/* Langfristig und nachhaltig. */}
+      {/* <FutureSplit
         invertMobile
         // topDivider
         imageFill
         className="illustration-section-02"
-      />
+      /> */}
       <ClimateSplit
         invertMobile
         // topDivider

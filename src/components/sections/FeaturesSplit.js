@@ -75,22 +75,21 @@ const FeaturesSplit = ({
                 {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Was uns stört
                 </div> */}
-                <h2 className="mt-0 mb-12">Die Vision von RECSCOUT.</h2>
+                <h2 className="mt-0 mb-12">Die Vision.</h2>
                 <p className="m-6">
-                  Nach welchen Kriterien wählen Sie Ihren Personalberater aus?
-                  Entscheiden Sie sich immer für denselben, den aufdringlichsten
-                  oder den passendsten Personalberater? RECSCOUT ist für
-                  Unternehmen die Lösung, um für jede Vakanz den besten
-                  Personalberater zu finden.
+                  Unsere Vision ist eine Recruiting-Community, die offen und
+                  transparent miteinander arbeiten kann. Unternehmen,
+                  Kandidat:innen und Personalberater:innen sollen miteinander
+                  frei agieren können, um gemeinsam die best möglichen Teams
+                  aufzubauen.
                 </p>
 
-                <h2 className="mt-0 mb-12 mt-32">Die Mission von RECSCOUT.</h2>
+                <h2 className="mt-0 mb-12 mt-32">Die Mission.</h2>
                 <p className="m-6">
-                  RECSCOUT ist auf der Mission, eine marktführende
-                  Recruiting-Plattform aufzubauen, die die Zusammenarbeit
-                  zwischen HR-Teams und Personalberatern revolutioniert und
-                  reguliert, um einen transparenten Personalberatermarkt für
-                  eine optimale Stellenbesetzung für BEIDE Seiten zu schaffen.
+                  Wir bauen an einer Plattform, über die wir Unternehmen mit
+                  Personalberater:innen und wechselbereiten Kandidat:innen
+                  vernetzen, die nicht per Stellenausschreibungen erreicht,
+                  sondern aktiv angesprochen werden müssen.
                 </p>
               </div>
               <div
