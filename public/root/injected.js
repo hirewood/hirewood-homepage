@@ -222,6 +222,13 @@ window.addEventListener("load", async function (event) {
   const isSettingsPage =
     splittedPathname[splittedPathnameArrayPosition] === "settings";
   if (isSettingsPage) {
+    // change text of anzeigename
+
+    $("#person_display_name")
+      .prev("small")
+      .text(
+        "Der Anzeigename wird anderen Nutzern statt des Vor- und Nachnamens angezeigt.\n\nUnternehmen tragen ihren Unternehmensnamen ein (z.B. XY GmbH) Berater:in tragen den eigenen Vor- und Nachnamen + Unternehmensnamen ein (Elon Musk | XY Personalberatung) GmbH Kandidat:in tragen ihre Position ein (z.B Cloud Architect, Sales Manager, CIO) So bleibt ihr Kandidatenprofil anonym."
+      );
     // remove anzeigename
     // $("#person_display_name").prev("small").remove();
     // $("#person_display_name")
