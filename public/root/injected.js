@@ -247,19 +247,19 @@ window.addEventListener("load", async function (event) {
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://recscout.medium.com/musterprofil-personalberater-edcff48fe6f9' target='_blank' class='profile-link'><small>Mustervorlage für Personalberater</small></a>"
+        "<a href='https://hirewood.medium.com/musterprofil-personalberater-edcff48fe6f9' target='_blank' class='profile-link'><small>Mustervorlage für Personalberater</small></a>"
       )
     );
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://recscout.medium.com/musterprofil-unternehmen-58112506312b' target='_blank' class='profile-link'><small>Mustervorlage für Unternehmen</small></a>"
+        "<a href='https://hirewood.medium.com/musterprofil-unternehmen-58112506312b' target='_blank' class='profile-link'><small>Mustervorlage für Unternehmen</small></a>"
       )
     );
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://recscout.medium.com/musterprofil-kandidat-innen-143a9055ab30' target='_blank' class='profile-link'><small>Mustervorlage für Kandidaten</small></a>"
+        "<a href='https://hirewood.medium.com/musterprofil-kandidat-innen-143a9055ab30' target='_blank' class='profile-link'><small>Mustervorlage für Kandidaten</small></a>"
       )
     );
 
@@ -474,7 +474,7 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hiermit akzeptieren wir die Beauftragung über RECSCOUT.\n\nID: (Ihre interne Projektnummer, wenn vorhanden)\nVakanz:\nZielgehalt: X - X €\nBeraterhornorar: X % vom Jahreszielgehalt\nAnzahlung: X € / Erfolgsbasiert\nNachpräsentation:\nErgänzende Vereinbarung:\n\nDarüber Hinaus werden die AGB der Personalberatung XXX akzeptiert\n\nViele Grüße"
+                  "Hiermit akzeptieren wir die Beauftragung über hirewood.\n\nID: (Ihre interne Projektnummer, wenn vorhanden)\nVakanz:\nZielgehalt: X - X €\nBeraterhornorar: X % vom Jahreszielgehalt\nAnzahlung: X € / Erfolgsbasiert\nNachpräsentation:\nErgänzende Vereinbarung:\n\nDarüber Hinaus werden die AGB der Personalberatung XXX akzeptiert\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
@@ -487,7 +487,7 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hiermit stornieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X. \n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional):\n\nViele Grüße\n"
+                  "Hiermit stornieren wir die Beauftragung über hirewood vom X für die Vakanz X. \n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional):\n\nViele Grüße\n"
                 );
                 autoResizeTextAreas();
               })
@@ -500,7 +500,7 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hiermit pausieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X.\n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional): \nWir bitten Sie, die Suche erst nach erneuter Beauftragung fortzusetzen.\n\nBegründung:\n\nViele Grüße"
+                  "Hiermit pausieren wir die Beauftragung über hirewood vom X für die Vakanz X.\n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional): \nWir bitten Sie, die Suche erst nach erneuter Beauftragung fortzusetzen.\n\nBegründung:\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
@@ -518,7 +518,7 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über RECSCOUT.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
+                  "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über hirewood.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
                 );
                 autoResizeTextAreas();
               })
@@ -591,7 +591,7 @@ window.addEventListener("load", async function (event) {
     // $("#admin_transactions").remove();
 
     const payactiveEndpointData = await fetch(
-      "https://apps.recscout.com/api/payactive"
+      "https://apps.hirewood.com/api/payactive"
     ).then(async (response) => await response.json());
 
     console.log("endpointData", payactiveEndpointData);
@@ -599,15 +599,15 @@ window.addEventListener("load", async function (event) {
     //admin_transactions
     // novospace
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.novospace.com/" target="_blank">novospace</a></div><div class="transaction-explainer"><h5>Datenshare</h5>Über unseren Partner Novospace können Sie Daten wie Kandidaten-Profile mit Ihren Auftraggebern teilen. Dazu erstellen Sie per Klick einen Space je Auftraggeber. Alles DSGVO konform, mit verschlüsselten Daten und Servern in Deutschland. So haben beide Parteien alle betreffenden Kandidaten in einem Space. Registrieren Sie sich dazu kostenlos, kurz und knackig bei unserem Partner. Öffnen Sie den Space bequem im RECSCOUT Chat und besprechen Sie Kandidaten im RECSCOUT Video Call.</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.novospace.com/" target="_blank">novospace</a></div><div class="transaction-explainer"><h5>Datenshare</h5>Über unseren Partner Novospace können Sie Daten wie Kandidaten-Profile mit Ihren Auftraggebern teilen. Dazu erstellen Sie per Klick einen Space je Auftraggeber. Alles DSGVO konform, mit verschlüsselten Daten und Servern in Deutschland. So haben beide Parteien alle betreffenden Kandidaten in einem Space. Registrieren Sie sich dazu kostenlos, kurz und knackig bei unserem Partner. Öffnen Sie den Space bequem im hirewood Chat und besprechen Sie Kandidaten im hirewood Video Call.</div></div>`
     );
     // refapp
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.refapp.se/?lang=en&a=b/" target="_blank">refapp</a></div><div class="transaction-explainer"><h5>Referenzen</h5>Refapp, holen Sie sich spielend digitale Referenzen zu Ihren Kandidaten ein. Wir freuen uns zusammen mit Refapp eine kostenfreie Testphase von zwei Monaten und einen Neukundenrabatt für die erste Vertragslaufzeit anbieten zu können. <a href="https://recscout.medium.com/bestehende-referenzen-als-personalberater-in-recscout-%C3%BCbertragen-931593739a04" target="_blank">Zum Refapp Blogbeitrag</a> <a href="#" target="_blank">Zum Angebot</a></div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.refapp.se/?lang=en&a=b/" target="_blank">refapp</a></div><div class="transaction-explainer"><h5>Referenzen</h5>Refapp, holen Sie sich spielend digitale Referenzen zu Ihren Kandidaten ein. Wir freuen uns zusammen mit Refapp eine kostenfreie Testphase von zwei Monaten und einen Neukundenrabatt für die erste Vertragslaufzeit anbieten zu können. <a href="https://hirewood.medium.com/bestehende-referenzen-als-personalberater-in-hirewood-%C3%BCbertragen-931593739a04" target="_blank">Zum Refapp Blogbeitrag</a> <a href="#" target="_blank">Zum Angebot</a></div></div>`
     );
     // aifinyo
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h5>Factoring</h5>Mit unserem Payment-Partner für Factoring bieten wir Personalberater:innen den digitalen Boost für mehr Liquidität an. Berater:innen bieten wir die Möglichkeit einer Honorar-Auszahlung innerhalb von 48 Stunden. Gleichzeitig genießen Unternehmen eine Zahlungsflexibilität von bis zu 90 Tagen.</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=hirewood" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h5>Factoring</h5>Mit unserem Payment-Partner für Factoring bieten wir Personalberater:innen den digitalen Boost für mehr Liquidität an. Berater:innen bieten wir die Möglichkeit einer Honorar-Auszahlung innerhalb von 48 Stunden. Gleichzeitig genießen Unternehmen eine Zahlungsflexibilität von bis zu 90 Tagen.</div></div>`
     );
     // payactive
     $(".left-navi-section h2").after(
@@ -615,7 +615,7 @@ window.addEventListener("load", async function (event) {
     );
     // description
     $(".left-navi-section h2").after(
-      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in wenigen Schritten registrieren können.</p><p style="margin-bottom: 45px">Außerdem finden Sie hier weitere Informationen zum Payment über unsere Partner <a href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
+      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in wenigen Schritten registrieren können.</p><p style="margin-bottom: 45px">Außerdem finden Sie hier weitere Informationen zum Payment über unsere Partner <a href="https://hirewood.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
     );
   }
 
@@ -628,7 +628,7 @@ window.addEventListener("load", async function (event) {
 
   if (isGeneralTransactionsPage && isNewTransactionsPage) {
     $("#message").val(
-      "Hallo,\ngerne möchten wir Sie im - Chat oder per Videocall - kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unsere aktuelle offene Vakanz\n3. Absprache der Konditionen\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen und würden Ihnen - nach einer erfolgreicher Absprache- gerne den Auftrag über RECSCOUT erteilen."
+      "Hallo,\ngerne möchten wir Sie im - Chat oder per Videocall - kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unsere aktuelle offene Vakanz\n3. Absprache der Konditionen\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen und würden Ihnen - nach einer erfolgreicher Absprache- gerne den Auftrag über hirewood erteilen."
     );
     autoResizeTextAreas();
   }
@@ -645,7 +645,7 @@ window.addEventListener("load", async function (event) {
     $(".title-container").remove();
     // add the contact
     const contactForm =
-      '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
+      '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://hirewood.hubspotpagebuilder.com/hirewood-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
     $(".marketplace-lander").append(contactForm);
 
     // remove the second hubspot element
@@ -691,7 +691,7 @@ window.addEventListener("load", async function (event) {
     const reactScript = document.createElement("script");
     reactScript.type = "text/javascript";
     reactScript.src =
-      "https://sajadghawami.github.io/recscout-homepage/public/main.js";
+      "https://sajadghawami.github.io/hirewood-homepage/public/main.js";
     $("head").append(reactScript);
   };
 

@@ -328,11 +328,11 @@ label[for="email_about_completed_transactions"] {
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
-    background-image: url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_empty.png);
+    background-image: url(https://sajadghawami.github.io/hirewood-homepage/public/assets/images/rating/star_empty.png);
 }
 
 .rating-scale button.selected {
-    background-image: url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_filled.png);
+    background-image: url(https://sajadghawami.github.io/hirewood-homepage/public/assets/images/rating/star_filled.png);
 }
 
 /* dont display at first paint */

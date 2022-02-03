@@ -1,9 +1,9 @@
     <link
-      href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
+      href="https://sajadghawami.github.io/hirewood-homepage/public/main.css"
       rel="stylesheet"
     />
 
-    <script src="https://sajadghawami.github.io/recscout-homepage/public/main.js></script>
+    <script src="https://sajadghawami.github.io/hirewood-homepage/public/main.js></script>
 
 ---
 
@@ -18,8 +18,6 @@ will move .css and js to public folder, which we reference
 
 ---
 
-https://sajadghawami.github.io/recscout-homepage/public/assets/images/cta-illustration.svg
-
-
+https://sajadghawami.github.io/hirewood-homepage/public/assets/images/cta-illustration.svg
 
 yarn build && yarn build:clean && git add . && git commit -m "wip" && git push
