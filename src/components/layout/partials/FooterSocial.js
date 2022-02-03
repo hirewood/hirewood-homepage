@@ -9,7 +9,7 @@ const FooterSocial = ({ className, ...props }) => {
       <ul className="list-reset">
         <li>
           <a
-            href="https://recscout.medium.com/"
+            href="https://hirewood.medium.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -26,7 +26,7 @@ const FooterSocial = ({ className, ...props }) => {
         </li>
         <li>
           <a
-            href="https://twitter.com/recscout"
+            href="https://twitter.com/hirewood"
             target="_blank"
             rel="noreferrer"
           >
@@ -43,7 +43,7 @@ const FooterSocial = ({ className, ...props }) => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/recscout.blog/"
+            href="https://www.instagram.com/hirewood.blog/"
             target="_blank"
             rel="noreferrer"
           >

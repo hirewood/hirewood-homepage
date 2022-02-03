@@ -99,7 +99,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/contact.svg"
+                    "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/contact.svg"
                   }
                   alt="Features split 01"
                   width={528}

@@ -9,10 +9,10 @@ const FooterNav = ({ className, ...props }) => {
     <nav {...props} className={classes}>
       <ul className="list-reset">
         <li>
-          <a href="https://recscout.com/de/user_feedbacks/new">Contact</a>
+          <a href="https://hirewood.com/de/user_feedbacks/new">Contact</a>
         </li>
         <li>
-          <a href="https://recscout.com/de/infos/about">About us</a>
+          <a href="https://hirewood.com/de/infos/about">About us</a>
         </li>
         <li>
           <a href="#0">FAQ's</a>

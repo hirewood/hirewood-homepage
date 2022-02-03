@@ -44,7 +44,7 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "RECSCOUT - More Trust Less Bullshit.",
+    title: "hirewood - More Trust Less Bullshit.",
     paragraph: "",
   };
 
@@ -64,7 +64,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/quick_start.svg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/quick_start.svg"
                       }
                       alt="Features tile icon 01"
                     />
@@ -90,7 +90,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/matching.svg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/matching.svg"
                       }
                       alt="Features tile icon 02"
                     />
@@ -116,7 +116,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/rating.svg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/rating.svg"
                       }
                       alt="Features tile icon 03"
                     />
@@ -141,7 +141,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/communicate.svg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/communicate.svg"
                       }
                       alt="Features tile icon 05"
                     />
@@ -164,7 +164,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/commitment.svg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/commitment.svg"
                       }
                       alt="Features tile icon 04"
                     />
@@ -189,7 +189,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/payment.svg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/payment.svg"
                       }
                       alt="Features tile icon 06"
                     />
@@ -206,7 +206,7 @@ const FeaturesTiles = ({
                     tag="a"
                     color="dark"
                     wideMobile
-                    href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2"
+                    href="https://hirewood.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2"
                     target="_blank"
                     size="sm"
                     style={{ marginTop: 5 }}

@@ -69,7 +69,7 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "RECSCOUT Kreislauf.",
+    title: "hirewood Kreislauf.",
     // paragraph: "Wir bringen moderne Technologien in den Recruiting Markt.",
   };
 
@@ -94,13 +94,13 @@ const FeaturesSplit = ({
               >
                 {!isMobile ? (
                   <img
-                    src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/homepage-circle-desktop.jpg"
+                    src="https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/homepage-circle-desktop.jpg"
                     style={{ maxWidth: 910, width: "100%" }}
                     alt="#"
                   />
                 ) : (
                   <img
-                    src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/homepage-circle-mobile.jpg"
+                    src="https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/homepage-circle-mobile.jpg"
                     style={{ maxWidth: 700, width: "100%" }}
                     alt="#"
                   />

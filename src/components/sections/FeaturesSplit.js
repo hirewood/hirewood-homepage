@@ -51,9 +51,9 @@ const FeaturesSplit = ({
   );
 
   // const sectionHeader = {
-  //   title: "Die Vision von RECSCOUT.",
+  //   title: "Die Vision von hirewood.",
   //   paragraph:
-  //     "Denken Sie an zahlreiche Anrufe, Mails, unterschiedliche Erwartungen ... und vergessen Sie diese. Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf RECSCOUT zu erleben. Wir wissen wovon wir reden - Unser Team setzt sich aus erfahrenen Gründern, Beratern und HR Business Partnern zusammen. Wir vereinen alle Blickwinkel und Anforderungen an HR-Dienstleistungen in einer Plattform.",
+  //     "Denken Sie an zahlreiche Anrufe, Mails, unterschiedliche Erwartungen ... und vergessen Sie diese. Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf hirewood zu erleben. Wir wissen wovon wir reden - Unser Team setzt sich aus erfahrenen Gründern, Beratern und HR Business Partnern zusammen. Wir vereinen alle Blickwinkel und Anforderungen an HR-Dienstleistungen in einer Plattform.",
   // };
 
   return (
@@ -101,7 +101,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/change.svg"
+                    "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/change.svg"
                   }
                   alt="Features split 01"
                   width={528}
@@ -126,8 +126,8 @@ const FeaturesSplit = ({
                 </p>
 
                 <p className="m-6">
-                  Verstehen Sie RECSCOUT als bewegliche Plattform. Wir ergänzen
-                  RECSCOUT stets mit Funktionen, aus denen Sie ganz nach Bedarf
+                  Verstehen Sie hirewood als bewegliche Plattform. Wir ergänzen
+                  hirewood stets mit Funktionen, aus denen Sie ganz nach Bedarf
                   wählen können.
                 </p>
               </div>
@@ -140,7 +140,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/change.svg"
+                    "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/change.svg"
                   }
                   alt="Features split 02"
                   width={528}
@@ -162,7 +162,7 @@ const FeaturesSplit = ({
                   Weitere Features, wie der Zugriff auf einen nach
                   Fachrichtungen spezialisierten Researcher Pool mit ergänzenden
                   wechselbereiten Kandidaten oder die Nutzung eines Spec-Streams
-                  sorgen für eine zusätzliche Wertschöpfung, welche Recscout in
+                  sorgen für eine zusätzliche Wertschöpfung, welche hirewood in
                   einem Abo-Modell anbieten möchte.
                 </p>
               </div>
@@ -175,7 +175,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/future.svg"
+                    "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/future.svg"
                   }
                   alt="Features split 03"
                   width={528}

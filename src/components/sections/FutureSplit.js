@@ -99,7 +99,7 @@ const FeaturesSplit = ({
                 </p>
                 <p className="mb-0 mt-12">WHY NOT?</p>
                 <p className="m-6">
-                  Es gibt für Sie keinen Grund, ohne RECSCOUT zu arbeiten. Wir
+                  Es gibt für Sie keinen Grund, ohne hirewood zu arbeiten. Wir
                   alle suchen Sicherheit, Vertrauen und eine regulierte
                   Grundlage mit einheitlichen Regeln. Warum sollten Sie bei der
                   Arbeit im Recruiting darauf verzichten?
@@ -114,7 +114,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/future.svg"
+                    "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/future.svg"
                   }
                   alt="Features split 01"
                   width={528}

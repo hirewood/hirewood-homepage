@@ -76,13 +76,13 @@ const FeaturesSplit = ({
                 </div> */}
                 <div>
                   <a
-                    href="https://wtca.lfca.earth/de/e/recscout"
+                    href="https://wtca.lfca.earth/de/e/hirewood"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/climate_action.jpg"
+                        "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/climate_action.jpg"
                       }
                       alt="Features split 01"
                       // width={528}
@@ -116,7 +116,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/climate.svg"
+                    "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/climate.svg"
                   }
                   alt="Features split 01"
                   width={528}

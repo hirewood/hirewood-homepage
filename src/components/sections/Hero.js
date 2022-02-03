@@ -75,7 +75,7 @@ const Hero = ({
               Work together.
             </h1>
             {/* <br /> */}
-            {/* <span className="text-color-primary">- Komm recscouten</span> */}
+            {/* <span className="text-color-primary">- Komm hirewooden</span> */}
             <div>
               <p
                 className="m-0 mb-32 reveal-from-bottom"
@@ -119,7 +119,7 @@ const Hero = ({
           </div>
           <div className="hero-image">
             <img
-              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/start.png"
+              src="https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/start.png"
               alt="#"
             />
           </div>

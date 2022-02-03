@@ -49,7 +49,7 @@ const Cta = ({
           <div className="cta-slogan">
             <h3 className="m-15">Demo buchen</h3>
             <p>
-              So legen Sie los: Eine kostenlose RECSCOUT Demo entspricht maximal
+              So legen Sie los: Eine kostenlose hirewood Demo entspricht maximal
               30 Minuten Ihrer Zeit, die Sie nachhaltig investieren.{" "}
             </p>
           </div>
@@ -57,7 +57,7 @@ const Cta = ({
           <div className="cta-action" style={{ minWidth: "50%" }}>
             <Image
               src={
-                "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/appointment.png"
+                "https://sajadghawami.github.io/hirewood-homepage/public/assets/images/homepage/appointment.png"
               }
               alt="Features split 01"
               width="100%"

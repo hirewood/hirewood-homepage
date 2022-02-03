@@ -24,7 +24,7 @@ const Home = () => {
         imageFill
         className="illustration-section-02"
       />
-      {/* Der RECSCOUT-Kreislauf */}
+      {/* Der hirewood-Kreislauf */}
       {/* <CircularSplit
         invertMobile
         // topDivider
