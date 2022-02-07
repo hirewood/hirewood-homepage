@@ -178,8 +178,18 @@ window.addEventListener("load", async function (event) {
   // pages
 
   // index page when logged in
-  const isIndexSearchPage =
-    splittedPathname[0] === "" && splittedPathname[1] === "";
+  let isIndexSearchPage = false;
+  // default empty
+  if (splittedPathname[0] === "" && splittedPathname[1] === "") {
+    isIndexSearchPage = true;
+  }
+  // with (only) language in url means its the search
+  if (splittedPathname[0] === "" && splittedPathname[2] === undefined) {
+    // second position is language
+    if (splittedPathname[1] === "de" || splittedPathname[1] === "en") {
+      isIndexSearchPage = true;
+    }
+  }
 
   // remove question mark from location if there is one
   var cleanedQuery =
@@ -645,7 +655,7 @@ window.addEventListener("load", async function (event) {
     $(".title-container").remove();
     // add the contact
     const contactForm =
-      '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://hirewood.hubspotpagebuilder.com/hirewood-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
+      '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
     $(".marketplace-lander").append(contactForm);
 
     // remove the second hubspot element

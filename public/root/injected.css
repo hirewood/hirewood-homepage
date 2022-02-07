@@ -1,5 +1,10 @@
 /* this is directly injected into the page */
 
+/* login */
+.linkedin-text {
+    color: #fff;
+}
+
 /* change font size for ipad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     body {
