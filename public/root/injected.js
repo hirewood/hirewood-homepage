@@ -184,10 +184,12 @@ window.addEventListener("load", async function (event) {
     isIndexSearchPage = true;
   }
   // with (only) language in url means its the search
-  if (splittedPathname[0] === "" && splittedPathname[2] === undefined) {
+  if (splittedPathname[0] === "") {
     // second position is language
     if (splittedPathname[1] === "de" || splittedPathname[1] === "en") {
-      isIndexSearchPage = true;
+      if (splittedPathname[2] === "" || splittedPathname[2] === undefined) {
+        isIndexSearchPage = true;
+      }
     }
   }
 
