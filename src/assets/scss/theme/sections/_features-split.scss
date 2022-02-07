@@ -21,3 +21,17 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.mission-vision {
+    justify-content: space-between !important;
+    .split-item-content {
+        width: 45% !important;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column !important;
+        .split-item-content {
+            width: 100% !important;
+        }
+    }
+}

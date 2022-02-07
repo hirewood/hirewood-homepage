@@ -66,16 +66,21 @@ const FeaturesSplit = ({
             style={{ width: "100%", textAlign: "left" }}
           /> */}
           <div className={splitClasses}>
-            <div className="split-item">
+            <div
+              className="split-item mission-vision"
+              style={{
+                alignItems: "flex-start",
+              }}
+            >
               <div
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
-                // style={{ textAlign: "center" }}
+                style={{ marginRight: 0 }}
               >
                 {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Was uns stört
                 </div> */}
-                <h2 className="mt-0 mb-12">Die Vision.</h2>
+                <h2 className="mt-0 mb-12 mt-32">Die Vision.</h2>
                 <p className="m-6">
                   Unsere Vision ist eine Recruiting-Community, die offen und
                   transparent miteinander arbeiten kann. Unternehmen,
@@ -83,6 +88,15 @@ const FeaturesSplit = ({
                   frei agieren können, um gemeinsam die best möglichen Teams
                   aufzubauen.
                 </p>
+              </div>
+              <div
+                className="split-item-content center-content-mobile reveal-from-left"
+                data-reveal-container=".split-item"
+                style={{ marginRight: 0 }}
+              >
+                {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Was uns stört
+                </div> */}
 
                 <h2 className="mt-0 mb-12 mt-32">Die Mission.</h2>
                 <p className="m-6">
@@ -92,7 +106,7 @@ const FeaturesSplit = ({
                   sondern aktiv angesprochen werden müssen.
                 </p>
               </div>
-              <div
+              {/* <div
                 className={classNames(
                   "split-item-image center-content-mobile reveal-from-bottom",
                   imageFill && "split-item-image-fill"
@@ -107,8 +121,9 @@ const FeaturesSplit = ({
                   width={528}
                   height={396}
                 />
-              </div>
+              </div> */}
             </div>
+
             {/* 
             <div className="split-item">
               <div
