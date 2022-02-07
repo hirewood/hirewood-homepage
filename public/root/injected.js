@@ -187,7 +187,7 @@ window.addEventListener("load", async function (event) {
   if (splittedPathname[0] === "") {
     // second position is language
     if (splittedPathname[1] === "de" || splittedPathname[1] === "en") {
-      if (splittedPathname[2] === "" || splittedPathname[2] === undefined) {
+      if (splittedPathname[2] === "/" || splittedPathname[2] === undefined) {
         isIndexSearchPage = true;
       }
     }
