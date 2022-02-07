@@ -2,8 +2,8 @@ import React from "react";
 // import sections
 import Hero from "../components/sections/Hero";
 import FeaturesTiles from "../components/sections/FeaturesTiles";
-import FutureSplit from "../components/sections/FutureSplit";
 import FeaturesSplit from "../components/sections/FeaturesSplit";
+import ThreeFeatures from "../components/sections/ThreeFeatures";
 import ClimateSplit from "../components/sections/ClimateSplit";
 import CallSplit from "../components/sections/CallSplit";
 import CircularSplit from "../components/sections/CircularSplit";
@@ -19,6 +19,12 @@ const Home = () => {
     <div className={outerClasses}>
       <Hero />
       <FeaturesSplit
+        invertMobile
+        // topDivider
+        imageFill
+        className="illustration-section-02"
+      />
+      <ThreeFeatures
         invertMobile
         // topDivider
         imageFill
@@ -45,6 +51,7 @@ const Home = () => {
         imageFill
         className="illustration-section-02"
       />
+
       <CallSplit
         invertMobile
         // topDivider

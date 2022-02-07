@@ -35,3 +35,20 @@
         }
     }
 }
+
+.three-features {
+    justify-content: space-between !important;
+    .split-item-content {
+        width: 30% !important;
+    }
+    p {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column !important;
+        .split-item-content {
+            width: 100% !important;
+        }
+    }
+}
