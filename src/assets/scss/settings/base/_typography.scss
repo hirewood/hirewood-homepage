@@ -1,12 +1,12 @@
 // Typography
 
 $font--provider: "Google Fonts";
-$font--import: "Lexend+Deca:400,500,600,700,800";
+$font--import: "Outfit:400,500,600,700,800";
 
 // The font set
 $font--family: (
-	heading: '"Lexend Deca", sans-serif',
-	base: '"Lexend Deca", sans-serif',
+	heading: '"Outfit", sans-serif',
+	base: '"Outfit", sans-serif',
 	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
 	pre: '"Courier 10 Pitch", Courier, monospace',
 );

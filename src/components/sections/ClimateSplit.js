@@ -94,7 +94,7 @@ const FeaturesSplit = ({
                 <h6
                   className="m-6"
                   style={{
-                    backgroundColor: "#78d1c4",
+                    backgroundColor: "#00a6ed",
                     padding: 25,
                     color: "#FFF",
                     fontWeight: 300,
