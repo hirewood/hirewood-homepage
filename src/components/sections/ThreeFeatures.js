@@ -80,7 +80,7 @@ const FeaturesSplit = ({
                 <h3 className="mt-0 mb-12 mt-32">Unternehmen.</h3>
                 <div
                   style={{
-                    backgroundColor: "#79d1c4",
+                    backgroundColor: "#00a6ed",
                     padding: 15,
                     borderRadius: 15,
                     marginTop: 50,
@@ -128,7 +128,7 @@ const FeaturesSplit = ({
                 <h3 className="mt-0 mb-12 mt-32">Personalberater:innen.</h3>
                 <div
                   style={{
-                    backgroundColor: "#79d1c4",
+                    backgroundColor: "#00a6ed",
                     padding: 15,
                     borderRadius: 15,
                     marginTop: 50,

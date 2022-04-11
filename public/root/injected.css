@@ -1,5 +1,9 @@
 /* this is directly injected into the page */
 
+body {
+    font-family: "Outfit", sans-serif !important;
+}
+
 /* login */
 .linkedin-text {
     color: #fff;
@@ -265,7 +269,7 @@ a.transaction-button-link:nth-of-type(2) {
     padding-right: 15px;
     padding-bottom: 5px;
     padding-top: 5px;
-    background-color: #79d1c4;
+    background-color: #00a6ed;
     color: #fff !important;
 }
 
