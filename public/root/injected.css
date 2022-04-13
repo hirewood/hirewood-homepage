@@ -1,7 +1,17 @@
 /* this is directly injected into the page */
 
+/* colors */
+
+/* black/dark-grey = #1b1e22 */
+/* light-text-grey = #292f36 *
+/* light-background-grey = #f4f5f6 */
+
+/* base colors */
+/* blue = #00a6ed */
+
 body {
     font-family: "Outfit", sans-serif !important;
+    color: #1b1e22;
 }
 
 /* login */
@@ -15,6 +25,39 @@ body {
     height: 100%;
     padding-bottom: 8px;
     padding-left: 15px;
+}
+
+/* */
+/* general */
+/* */
+
+.home-toolbar {
+    border: none;
+}
+
+.AddNewListingButton {
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 15%);
+    transition: all 200ms ease;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.AddNewListingButton:hover {
+    transform: scale(1.05);
+}
+
+.AddNewListingButton_background {
+    border-radius: 0px;
+}
+
+.AddNewListingButton_desktop {
+    font-size: 18px;
+}
+
+.wrapper {
+    max-width: 1440px;
 }
 
 /* change font size for ipad */
@@ -68,6 +111,23 @@ body {
 /* navigationbar */
 /*  */
 
+.MenuPriority a,
+.jitsi-button,
+.menu__label {
+    font-size: 18px !important;
+    transition: all 200ms ease;
+}
+
+.MenuPriority a:hover,
+.jitsi-button:hover,
+.menu__label:hover {
+    opacity: 0.5;
+}
+
+.MenuPriority > div {
+    width: 100% !important;
+}
+
 /* remove the all entries/alle einträge in the sub-header in search */
 #home_toolbar-select-share-type {
     display: none;
@@ -77,10 +137,6 @@ body {
     display: none;
 }
 
-.jitsi-button img {
-    width: 25px;
-    height: auto;
-}
 .Avatar:hover {
     cursor: pointer;
 }
@@ -93,6 +149,40 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
     display: none;
 }
 
+/*  */
+/* Listings */
+/*  */
+
+/* top right toolbar */
+.home-toolbar-button-group-button {
+    background: #f4f5f6;
+}
+
+/* grid */
+.fluid-thumbnail-grid-image-image {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.home-fluid-thumbnail-grid-author {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 54px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 20px;
+    background: #f4f5f6;
+}
+
+.fluid-thumbnail-grid-image-price-container {
+    top: 8px;
+    right: 10px;
+    padding: 4px 10px;
+    border-radius: 7px;
+    background-color: #1b1e22;
+    color: #fff;
+}
+
 /* inside listings */
 .listing-author-name {
     height: auto;
@@ -102,6 +192,18 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 .listing-author-name-link {
     overflow: visible;
     white-space: normal;
+}
+
+.marketplace-lander .title-header-wrapper {
+    max-width: 1440px;
+    background-color: #f4f5f6;
+    border-radius: 28px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.title-container {
+    background-color: #fff;
 }
 
 /* change the width of the content in listings */
@@ -164,7 +266,10 @@ a.message-button-link {
     align-items: flex-start;
 }
 
-/* transaction buttons */
+/* --------- */
+/* transaction buttons  */
+/* -------- */
+
 .transaction-button {
     flex: 1;
     display: flex;
@@ -208,7 +313,10 @@ a.transaction-button-link:nth-of-type(2) {
     cursor: pointer;
 }
 
-/* The Custom Modal */
+/* --------- */
+/* Modal  */
+/* -------- */
+
 .custom-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -264,13 +372,27 @@ a.transaction-button-link:nth-of-type(2) {
 
 /* for the search information modal */
 .search-information-button {
+    top: 10px;
+    position: relative;
     border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     background-color: #00a6ed;
     color: #fff !important;
+
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 15%);
+    transition: all 200ms ease;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 18px !important;
+}
+
+.search-information-button:hover {
+    transform: scale(1.05) !important;
 }
 
 /* notifications */
@@ -363,7 +485,41 @@ label[for="email_about_completed_transactions"] {
     display: none;
 }
 
+/* */
 /* footer */
+/* */
+
+.footer__content {
+    max-width: 1440px;
+    padding: 0px;
+}
+
+.footer__links-container {
+    max-width: 100%;
+    color: #fff;
+    background: #1b1e22;
+    padding: 112px 84px;
+    border-radius: 28px;
+}
+
+.footer__link {
+    color: #fff !important;
+    opacity: 0.5;
+    transition: opacity 200ms ease;
+}
+
+.footer__link:hover {
+    opacity: 1;
+}
+
+.footer__social-media-link > svg {
+    fill: #fff !important;
+}
+
 .footer__logo-image {
     max-width: 300px;
+}
+
+.footer__separator {
+    display: none;
 }
