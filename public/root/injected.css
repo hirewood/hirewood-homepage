@@ -188,7 +188,7 @@ a.message-button-link:hover {
 .menu__label {
     font-size: 18px !important;
     transition: all 200ms ease;
-    color: #1b1e22;
+    color: #1b1e22 !important;
 }
 
 .MenuPriority a:hover,
