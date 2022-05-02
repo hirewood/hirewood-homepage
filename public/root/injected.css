@@ -66,6 +66,7 @@ section {
 /* */
 
 /* ALL BUTTONS */
+.enabled-book-button,
 .linkedin-login-button,
 #new_person button,
 #main_log_in_button,
@@ -85,6 +86,7 @@ a.message-button-link {
     padding-bottom: 0.5625em;
 }
 
+.enabled-book-button:hover,
 .linkedin-login-button:hover,
 #new_person button:hover,
 #main_log_in_button:hover,
@@ -186,6 +188,7 @@ a.message-button-link:hover {
 .menu__label {
     font-size: 18px !important;
     transition: all 200ms ease;
+    color: #1b1e22;
 }
 
 .MenuPriority a:hover,
