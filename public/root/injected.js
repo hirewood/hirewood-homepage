@@ -176,13 +176,21 @@ window.addEventListener("load", async function (event) {
   }
 
   // pages
+  // check if homepage and redirect
+  if (
+    splittedPathname[0] === "" &&
+    splittedPathname[1] === "" &&
+    splittedPathname.length === 2
+  ) {
+    // redirect
+    this.window.location = "/login";
+  }
+
   // index page when logged in
   let isIndexSearchPage = false;
   // default empty
   if (splittedPathname[0] === "" && splittedPathname[1] === "") {
     isIndexSearchPage = true;
-    // redirect
-    this.window.location = "/login";
   }
   // with (only) language in url means its the search
   if (splittedPathname[0] === "") {
