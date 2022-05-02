@@ -234,16 +234,23 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 
 /* message buttons */
 a.message-button-link {
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 15%);
+    background-color: #00a6ed;
+    transition: all 200ms ease;
     color: #fff;
-    background-color: #000;
-    border-radius: 0.3125em;
+    font-weight: 600;
     text-align: center;
-    margin: 0;
+    border-radius: 7px;
+
     padding: 0 1.5em;
     line-height: 1.15;
     padding-top: 0.5625em;
     padding-bottom: 0.5625em;
     margin: 0;
+}
+
+a.message-button-link:hover {
+    transform: scale(1.05);
 }
 
 /* top buttons */
