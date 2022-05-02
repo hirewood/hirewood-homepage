@@ -15,6 +15,35 @@ body {
     font-size: 1.1em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+td,
+th,
+tr,
+label,
+form .checkbox-container label,
+input,
+button,
+textarea,
+select,
+option,
+form,
+footer,
+header,
+nav,
+section {
+    font-family: "Outfit", sans-serif !important;
+    color: #1b1e22;
+    font-weight: 400;
+}
+
 #root {
     height: 100vh;
 }
@@ -35,6 +64,42 @@ body {
 /* */
 /* general */
 /* */
+
+/* ALL BUTTONS */
+.linkedin-login-button,
+#new_person button,
+#main_log_in_button,
+.message-form-submit-wrapper button,
+a.message-button-link {
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 15%);
+    background-color: #00a6ed;
+    transition: all 200ms ease;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 7px;
+
+    padding: 0 1.5em;
+    line-height: 1.15;
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+}
+
+.linkedin-login-button:hover,
+#new_person button:hover,
+#main_log_in_button:hover,
+.message-form-submit-wrapper button:hover,
+a.message-button-link:hover {
+    transform: scale(1.05);
+}
+
+.linkedin-login-button {
+    text-align: left;
+}
+.linkedin-login-button:hover {
+    background-color: #0077b5;
+}
+/* ALL BUTTONS END*/
 
 .home-toolbar {
     border: none;
@@ -231,29 +296,6 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 
 .checkbox-option.selected {
     margin-bottom: 0.25em;
-}
-
-/* message buttons */
-.message-form-submit-wrapper button,
-a.message-button-link {
-    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 15%);
-    background-color: #00a6ed;
-    transition: all 200ms ease;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 7px;
-
-    padding: 0 1.5em;
-    line-height: 1.15;
-    padding-top: 0.5625em;
-    padding-bottom: 0.5625em;
-    margin: 0;
-}
-
-.message-form-submit-wrapper button:hover,
-a.message-button-link:hover {
-    transform: scale(1.05);
 }
 
 /* top buttons */
