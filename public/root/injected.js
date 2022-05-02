@@ -180,7 +180,8 @@ window.addEventListener("load", async function (event) {
   if (
     splittedPathname[0] === "" &&
     splittedPathname[1] === "" &&
-    splittedPathname.length === 2
+    splittedPathname.length === 2 &&
+    window.location.search[0] === undefined
   ) {
     // redirect
     this.window.location = "/login";
