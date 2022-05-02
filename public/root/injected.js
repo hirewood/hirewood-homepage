@@ -647,29 +647,29 @@ window.addEventListener("load", async function (event) {
 
   // contact page
   // if we find the contact-wrapper, it means we are on the homepage
-  const elemContact = document.getElementsByClassName("new-feedback-form");
-  if (elemContact.length) {
-    // remove the page content
-    const pageContent = document.getElementsByClassName("page-content");
-    pageContent[0].parentNode.removeChild(pageContent[0]);
+  // const elemContact = document.getElementsByClassName("new-feedback-form");
+  // if (elemContact.length) {
+  //   // remove the page content
+  //   const pageContent = document.getElementsByClassName("page-content");
+  //   pageContent[0].parentNode.removeChild(pageContent[0]);
 
-    // remove the title
-    $(".title-container").remove();
-    // add the contact
-    const contactForm =
-      '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
-    $(".marketplace-lander").append(contactForm);
+  //   // remove the title
+  //   $(".title-container").remove();
+  //   // add the contact
+  //   const contactForm =
+  //     '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
+  //   $(".marketplace-lander").append(contactForm);
 
-    // remove the second hubspot element
-    // $("#hubspot-messages-iframe-container").attr(
-    //   "style",
-    //   "display: none !important"
-    // );
+  //   // remove the second hubspot element
+  //   // $("#hubspot-messages-iframe-container").attr(
+  //   //   "style",
+  //   //   "display: none !important"
+  //   // );
 
-    waitForElm("#hubspot-messages-iframe-container").then((elm) => {
-      $(elem).addClass("display-none");
-    });
-  }
+  //   waitForElm("#hubspot-messages-iframe-container").then((elm) => {
+  //     $(elem).addClass("display-none");
+  //   });
+  // }
 
   // WE PROBABLY DONT NEED THIS ANYMORE
   // Auto accept Rating Page
@@ -698,14 +698,14 @@ window.addEventListener("load", async function (event) {
   console.log("homepage script initialized");
 
   // fucntions
-  const injectReact = () => {
-    // inject react
-    const reactScript = document.createElement("script");
-    reactScript.type = "text/javascript";
-    reactScript.src =
-      "https://sajadghawami.github.io/hirewood-homepage/public/main.js";
-    $("head").append(reactScript);
-  };
+  // const injectReact = () => {
+  //   // inject react
+  //   const reactScript = document.createElement("script");
+  //   reactScript.type = "text/javascript";
+  //   reactScript.src =
+  //     "https://sajadghawami.github.io/hirewood-homepage/public/main.js";
+  //   $("head").append(reactScript);
+  // };
 
   // if we find the customization-wraper, it means we are on the homepage
   const elem = document.getElementsByClassName(
@@ -734,7 +734,7 @@ window.addEventListener("load", async function (event) {
     root.setAttribute("id", "root");
     document.getElementsByClassName("root-entry")[0].appendChild(root);
 
-    // inject react
-    injectReact();
+    // // inject react
+    // injectReact();
   }
 });
