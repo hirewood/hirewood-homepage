@@ -1,0 +1,141 @@
+<!-- custom head code-->
+<!-- The Jitsy Modal -->
+<div class="custom-modal jitsi" style="display: none">
+  <!-- Modal content -->
+  <div class="custom-modal-content">
+    <span class="custom-modal-close">&times;</span>
+    <div class="custom-modal-inner-wrapper">
+      <p>
+        <svg height="22" width="22" viewBox="0 0 22 22">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.792 15.583h-3.37a8.607 8.607 0 00-.482-1.833h3.388c.003-.066.005-.142.005-.23 0-3.39-.802-4.353-3.666-4.353-.745 0-1.35.065-1.839.221a4.57 4.57 0 00-1.37-3.494 3.208 3.208 0 115.875 1.85c2.08.788 2.834 2.714 2.834 5.777 0 1.375-.459 2.062-1.375 2.062zm-2.75-9.625a1.375 1.375 0 11-2.75 0 1.375 1.375 0 012.75 0zM3.437 20.167c-1.069 0-1.604-.764-1.604-2.292 0-3.493.926-5.655 3.5-6.486a3.667 3.667 0 115.833 0c2.575.831 3.5 2.993 3.5 6.486 0 1.528-.534 2.292-1.604 2.292H3.438zm6.646-11a1.833 1.833 0 11-3.666 0 1.833 1.833 0 013.666 0zm2.75 8.708c0 .196-.01.349-.025.458H3.692a3.738 3.738 0 01-.025-.458c0-3.856 1.036-5.042 4.583-5.042s4.583 1.186 4.583 5.042z"
+          ></path>
+        </svg>
+        Vereinbare einen Video Call mit ausgewählten Ansprechpartnern. Bitte
+        beachte folgende Schritte zur Eröffnung deines Calls:
+      </p>
+      <ul>
+        <li>Wähle Video Call</li>
+        <li>Beitreten</li>
+        <li>Person einladen</li>
+        <li>Link kopieren</li>
+        <li>Link in hirewood Chat einfügen</li>
+      </ul>
+
+      <p>
+        Bei Nutzung der Video Call Software zählen die AGB und
+        Datenschutzbestimmungen von Jitsi.
+      </p>
+    </div>
+    <a
+      href="https://apps.hirewood.com/jitsi"
+      class="message-button-link"
+      target="_blank"
+      >Videchat starten</a
+    >
+  </div>
+</div>
+
+<!-- The Information Modal -->
+<div class="custom-modal search-information" style="display: none">
+  <!-- Modal content -->
+  <div class="custom-modal-content">
+    <span class="custom-modal-close">&times;</span>
+    <div class="custom-modal-inner-wrapper">
+      <h5>Die hirewood Suche:</h5>
+      <p>
+        Hier finden Sie alle Kriterien, die Sie brauchen, um Ihre Berater:in
+        und/oder Kandidat:in zu finden.
+      </p>
+      <p>
+        Oben links angefangen können Sie zwischen Berater:in oder Kandidat:in
+        auswählen um die Suche zu filtern.
+      </p>
+      <p>
+        Außerdem empfehlen wir die Kriterien von oben nach unten zu befüllen und
+        bei Unsicherheiten die Felder eher frei zu lassen. Bitte auf die
+        Anmerkungen (max. 1) achten, hier ist immer nur ein Feld auszuwählen.
+      </p>
+      <p>
+        Sie suchen ein bestimmtes Stichwort? Dann nutzen Sie gerne die
+        Suchleiste oben.
+      </p>
+    </div>
+  </div>
+</div>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://sajadghawami.github.io/hirewood-homepage/public/main.css"
+  rel="stylesheet"
+/>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://sajadghawami.github.io/hirewood-homepage/public/root/lz-string.min.js"></script>
+<script src="https://sajadghawami.github.io/hirewood-homepage/public/root/injected.js"></script>
+<link
+  href="https://sajadghawami.github.io/hirewood-homepage/public/root/injected.css"
+  rel="stylesheet"
+/>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("user_VIpPTgE6zDdygtV99WPbk");
+  })();
+</script>
+<style>
+  /* remove the these here because otherwise they will be visible on first paint */
+  #admin_transactions_count,
+  #admin_transactions {
+    display: none;
+  }
+
+  /* homepage */
+  .marketplace-lander .search-form {
+    display: none;
+  }
+  /*  the comment box */
+  #comment-form,
+  .listing_comment_content_text_area,
+  .comment-content p {
+    display: none;
+  }
+  /*  the contact form */
+  .new-feedback-form {
+    display: none;
+  }
+
+  /* we remove the button here, but add it later with jquery
+    because otherwise it will be visible  */
+  .AddNewListingButton {
+    display: none !important;
+  }
+
+  /* remove the startpage from the menu */
+  /* .MenuContent > div:nth-child(3) {
+      display: none;
+    } */
+</style>
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-M5PHFMZ");
+</script>
+<!-- End Google Tag Manager -->
+<!--  custom head code end -->
