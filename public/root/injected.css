@@ -12,6 +12,7 @@
 body {
     font-family: "Outfit", sans-serif !important;
     color: #1b1e22;
+    font-size: 1.1em;
 }
 
 #root {
@@ -233,6 +234,7 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 }
 
 /* message buttons */
+.message-form-submit-wrapper button,
 a.message-button-link {
     box-shadow: 0 4px 14px 0 rgb(0 0 0 / 15%);
     background-color: #00a6ed;
@@ -249,6 +251,7 @@ a.message-button-link {
     margin: 0;
 }
 
+.message-form-submit-wrapper button:hover,
 a.message-button-link:hover {
     transform: scale(1.05);
 }
@@ -274,7 +277,7 @@ a.message-button-link:hover {
 .message-form-submit-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 /* --------- */
