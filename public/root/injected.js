@@ -217,7 +217,7 @@ window.addEventListener("load", async function (event) {
     if (hasSearchQuery) {
       $(".home-categories-main:first-of-type").css({ display: "block" });
     } else if (!hasSearchQuery && !hasCategoryQuery) {
-      this.window.location = "/?category=berater-in";
+      this.window.location = "/?category=kandidat-in";
     }
   }
 
