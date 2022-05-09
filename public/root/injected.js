@@ -136,6 +136,11 @@ window.addEventListener("load", async function (event) {
    * General
    */
 
+  // if user is not logged in, make the logo to go to the homepage
+  if (!isUserLoggedIn) {
+    $(".Logo").attr({ href: "https://hirewood.com" });
+  }
+
   const isInfoPages =
     splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
 
