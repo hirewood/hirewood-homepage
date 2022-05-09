@@ -140,6 +140,10 @@ window.addEventListener("load", async function (event) {
   if (!isUserLoggedIn) {
     $(".Logo").attr({ href: "https://hirewood.com" });
   }
+  $("#privacy_link").attr({
+    href: "https://www.hirewood.com/hw/impressum",
+    target: "_blank",
+  });
 
   const isInfoPages =
     splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
@@ -181,6 +185,21 @@ window.addEventListener("load", async function (event) {
   }
 
   // pages
+
+  // Sign-Up
+
+  // remove the lightbox event listener
+  $("#privacy_link").off("click");
+  $("#privacy_link").attr({
+    href: "https://www.hirewood.com/hw/impressum",
+    target: "_blank",
+  });
+  $("#terms_link").off("click");
+  $("#terms_link").attr({
+    href: "https://www.hirewood.com/hw/datenschutz",
+    target: "_blank",
+  });
+
   // check if homepage and redirect
   if (
     splittedPathname[0] === "" &&
