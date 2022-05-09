@@ -197,9 +197,9 @@ a.message-button-link:hover {
     opacity: 0.5;
 }
 
-.MenuPriority > div {
+/* .MenuPriority > div {
     width: 100% !important;
-}
+} */
 
 /* remove the all entries/alle einträge in the sub-header in search */
 #home_toolbar-select-share-type {
