@@ -183,6 +183,10 @@ a.message-button-link:hover {
 /* navigationbar */
 /*  */
 
+.LoginLinks a {
+    font-size: 18px !important;
+}
+
 .MenuPriority a,
 .jitsi-button,
 .menu__label {
