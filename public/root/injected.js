@@ -737,7 +737,7 @@ window.addEventListener("load", async function (event) {
   //   const reactScript = document.createElement("script");
   //   reactScript.type = "text/javascript";
   //   reactScript.src =
-  //     "https://sajadghawami.github.io/hirewood-homepage/public/main.js";
+  //     "https://hirewood.github.io/hirewood-homepage/public/main.js";
   //   $("head").append(reactScript);
   // };
 
