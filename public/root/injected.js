@@ -196,7 +196,7 @@ window.addEventListener("load", async function (event) {
   });
   $("#terms_link").off("click");
   $("#terms_link").attr({
-    href: "https://www.hirewood.com/hw/datenschutz",
+    href: "https://www.hirewood.com/hw/agb",
     target: "_blank",
   });
 
@@ -293,19 +293,19 @@ window.addEventListener("load", async function (event) {
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://hirewood.medium.com/musterprofil-personalberater-edcff48fe6f9' target='_blank' class='profile-link'><small>Mustervorlage für Personalberater</small></a>"
+        "<a href='https://hirewood.notion.site/Mustervorlage-f-r-Personalberater-innen-384cb6dafbfc47229f176215e6fa53e7' target='_blank' class='profile-link'><small>Mustervorlage für Recruiter:innen</small></a>"
       )
     );
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://hirewood.medium.com/musterprofil-unternehmen-58112506312b' target='_blank' class='profile-link'><small>Mustervorlage für Unternehmen</small></a>"
+        "<a href='https://hirewood.notion.site/Mustervorlage-f-r-Unternehmen-1416adfdd2194af6812e8e6fcaed347a' target='_blank' class='profile-link'><small>Mustervorlage für Unternehmen</small></a>"
       )
     );
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://hirewood.medium.com/musterprofil-kandidat-innen-143a9055ab30' target='_blank' class='profile-link'><small>Mustervorlage für Kandidaten</small></a>"
+        "<a href='https://hirewood.notion.site/Mustervorlage-f-r-Kandidat-innen-ae32cbf2293f450ea5539b78aedbb239' target='_blank' class='profile-link'><small>Mustervorlage für Kandidat:innen</small></a>"
       )
     );
 
