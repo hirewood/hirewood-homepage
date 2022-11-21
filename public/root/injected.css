@@ -231,8 +231,20 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 /*  */
 
 /* top right toolbar */
+.home-toolbar-button-group {
+    overflow: visible;
+}
+
 .home-toolbar-button-group-button {
     background: #f4f5f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease;
+}
+
+.home-toolbar-button-group-button:hover {
+    transform: scale(1.05);
 }
 
 /* grid */
