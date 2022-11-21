@@ -266,7 +266,11 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 }
 
 /* inside listings */
+/* hide the author */
 .listing-author {
+    display: none;
+}
+.page-content .row-with-divider:nth-child(2) {
     display: none;
 }
 
