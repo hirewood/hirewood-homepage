@@ -237,18 +237,23 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 
 /* grid */
 .fluid-thumbnail-grid-image-image {
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    border-radius: 14px;
+    height: 100%;
+}
+
+.fluid-thumbnail-grid-image-overlay {
+    border-radius: 14px;
 }
 
 .home-fluid-thumbnail-grid-author {
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
-    height: 54px;
-    padding-left: 3px;
-    padding-top: 1px;
-    font-size: 20px;
-    background: #f4f5f6;
+    background: #fff;
+}
+
+.home-fluid-thumbnail-grid-author-avatar,
+.home-fluid-thumbnail-grid-author-name {
+    display: none;
 }
 
 .fluid-thumbnail-grid-image-price-container {
@@ -261,6 +266,10 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
 }
 
 /* inside listings */
+.listing-author {
+    display: none;
+}
+
 .listing-author-name {
     height: auto;
     line-height: 1em;
