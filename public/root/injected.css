@@ -342,6 +342,15 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
     align-items: center;
 }
 
+/* remove details from transaction from to make it anonym */
+#transaction-form .preauthorize-section h2 {
+    display: none;
+}
+
+.preauthorize-section .no-bullets {
+    display: none;
+}
+
 /* --------- */
 /* transaction buttons  */
 /* -------- */
