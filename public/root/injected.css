@@ -282,6 +282,23 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
     color: #fff;
 }
 
+/* map */
+.bubble-image-container {
+    height: 100%;
+}
+
+.bubble-image-container img {
+    height: 100%;
+}
+
+.bubble-overlay {
+    bottom: 0;
+}
+
+.bubble-title {
+    display: none;
+}
+
 /* inside listings */
 /* hide the author */
 .listing-author {
