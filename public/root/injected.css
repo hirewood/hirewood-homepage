@@ -263,8 +263,13 @@ a[class^="Topbar__topbarListingButton"] .AddNewListingButton_mobile {
     background: #fff;
 }
 
+/* hide author in grid */
 .home-fluid-thumbnail-grid-author-avatar,
 .home-fluid-thumbnail-grid-author-name {
+    display: none;
+}
+/* hide author in list */
+.home-list-author {
     display: none;
 }
 
