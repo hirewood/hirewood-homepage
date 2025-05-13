@@ -538,6 +538,7 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
+        )
         .append(
             $("<a>Neue<br/>Absprache</a>")
               .attr({ href: "#" })
@@ -657,7 +658,7 @@ window.addEventListener("load", async function (event) {
 
   if (isGeneralTransactionsPage && isNewTransactionsPage) {
     $("#message").val(
-      "Hallo,\ngerne möchten wir Sie im - Chat oder per Videocall - kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unsere aktuelle offene Vakanz\n3. Absprache der Konditionen\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen und würden Ihnen - nach einer erfolgreicher Absprache- gerne den Auftrag über hirewood erteilen."
+      "Hallo,\ngerne möchten wir Sie kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unser aktuelles Thema\n3. Absprache von Möglichkeiten\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen."
     );
     autoResizeTextAreas();
   }
