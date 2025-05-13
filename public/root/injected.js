@@ -159,7 +159,7 @@ window.addEventListener("load", async function (event) {
 
     // display jitsi button in navbar
     $("div[class*=Topbar__topbarMenuSpacer__]").after(
-      '<a class="jitsi-button">Videocall starten</a>'
+      '<a class="jitsi-button">Videocall</a>'
     );
     // open the modal on click
     $(".jitsi-button")
@@ -277,7 +277,7 @@ window.addEventListener("load", async function (event) {
     $("#person_display_name").before($("<br/>"));
     $("#person_display_name").before(
       $(
-        "<small><b>Unternehmen</b> tragen ihren Unternehmensnamen ein (z.B. XY GmbH). <b>Berater:innen</b> tragen den eigenen Vor- und Nachnamen mit Unternehmensnamen ein (Elon Musk | XY Personalberatung). <b>Kandidat:innen</b> tragen ihre Position ein (z.B Cloud Architect, Sales Manager, CIO). So bleibt ihr Kandidatenprofil anonym.</small>"
+        "<small><b>Unternehmen</b> tragen ihren Unternehmensnamen ein (z.B. XY GmbH). <b>Berater oder Startups</b> tragen den eigenen Vor- und Nachnamen mit Unternehmensnamen ein (Vor- Nachname | XY GmbH). <b>Kandidat:innen</b> tragen ihre Position ein (z.B Cloud Architect, Sales Manager, CIO). So bleibt ihr Kandidatenprofil anonym.</small>"
       )
     );
     // remove anzeigename
@@ -313,14 +313,14 @@ window.addEventListener("load", async function (event) {
     $("#person_description").css({ height: "300px", resize: "auto" });
     $("#person_description").prop(
       "placeholder",
-      "Für Personalberater und Kandidaten:\nIn Ihrem Profil stehen Sie als Person im Mittelpunkt. Skizzieren Sie Ihre Expertise als Personalberater oder Kandidat, Ihren Fokus sowie weitere relevante Spezialisierungen. Eine Mustervorlage finden Sie in dem Link über diesem Textfeld.\n\nFür Unternehmen:\nSie entscheiden selbst, wann und mit welchen  Personalberatern Sie in Kontakt treten.  Stellen Sie Ihr Unternehmen für den weiteren Verlauf kurz vor:                                Empfehlung:   „Über uns” Text der Unternehmenshomepage einfügen. Ihr Profil wird nicht veröffentlicht. Ihre Informationen werden nur für von Ihnen kontaktierte Recruiter sichtbar."
+      "Mit Ihrem Profil stehen Sie im Mittelpunkt. Skizzieren Sie Ihre Schwerpunkte, Services oder Wünsche. Eine Mustervorlage finden Sie in den Links über diesem Textfeld.\n\nFür Unternehmen:\n                               Empfehlung:   „Über uns” Text der Unternehmenshomepage einfügen. Ihr Profil wird nicht veröffentlicht. Ihre Informationen werden nur für von Ihnen kontaktierte Recruiter sichtbar."
     );
 
     // image upload
     $("#avatar_file").before($("<br/>"));
     $("#avatar_file").before(
       $(
-        "<small>Als Berater oder Kandidat laden Sie ein Business Portraitfoto von Ihnen als Person hoch.</small>"
+        "<small>Als Berater, Startup oder Kandidat laden Sie ein Portraitfoto hoch.</small>"
       )
     );
     $("#avatar_file").before($("<br/>"));
@@ -357,11 +357,11 @@ window.addEventListener("load", async function (event) {
       function displayCreatingListingElements() {
         $("#listing_title").prop(
           "placeholder",
-          "z.B. Senior SAP Consultant bei XY GmbH"
+          "z.B. Ihr Name/ Startup oder als Kandidat:in den Jobtitel"
         );
         $("#listing_description").prop(
           "placeholder",
-          "z.B. Informationen zu Ihrer Person, Ihrer Personalberatung und Ihrer Spezialisierung. Ihre Angaben hier sind wichtig für die Schlagwortsuche für potentielle Auftraggeber."
+          "z.B. Informationen zu Ihrer Person, zum Startup oder als Kandidat:in Ihre Kenntnisse und Erfahrung. Die Angaben sind wichtig für die Schlagwortsuche für andere Nutzer."
         );
         // meine kernpositionen
         $("#custom_fields_168716").prop(
@@ -499,7 +499,7 @@ window.addEventListener("load", async function (event) {
     // create the top buttons
     $("#reply_form").before(
       $(
-        "<p class='message-avatar-padding'>Beim Klicken erzeugen wir einen Platzhaltertext der nochmal angepasst werden kann, bevor er abgeschickt wird.</p>"
+        "<p class='message-avatar-padding'>Per Klick erzeugen wir einen Platzhaltertext der angepasst werden kann.</p>"
       )
     );
 
@@ -513,14 +513,14 @@ window.addEventListener("load", async function (event) {
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Auftrag<br/>vergeben</a>")
+            $("<a>Kooperation<br/>Skizze</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hiermit akzeptieren wir die Beauftragung über hirewood.\n\nID: (Ihre interne Projektnummer, wenn vorhanden)\nVakanz:\nZielgehalt: X - X €\nBeraterhornorar: X % vom Jahreszielgehalt\nAnzahlung: X € / Erfolgsbasiert\nNachpräsentation:\nErgänzende Vereinbarung:\n\nDarüber Hinaus werden die AGB der Personalberatung XXX akzeptiert\n\nViele Grüße"
+                  "Skizzierte Kooperation.\n\nID: (Projektnummer, wenn vorhanden)\nProjektziel:\nZeitraum: X - X \nFinanzielle Volumen: \nAnzahlung: X € / Erfolgsbasiert\nErgänzende Vereinbarung:\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
