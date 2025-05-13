@@ -520,20 +520,20 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Skizzierte Kooperation.\n\nID: (Projektnummer, wenn vorhanden)\nProjektziel:\nZeitraum: X - X \nFinanzielle Volumen: \nAnzahlung: X € / Erfolgsbasiert\nErgänzende Vereinbarung:\n\nViele Grüße"
+                  "Skizzierte Kooperation\n\nID: (Projektnummer, wenn vorhanden)\nProjektziel:\nZeitraum: X - X \nFinanzielle Volumen: \nAnzahlung: X € / Erfolgsbasiert\nErgänzende Vereinbarung:\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
           )
           .append(
-            $("<a>Auftrag<br/>storniert</a>")
+            $("<a>Notizen<br/>Meeting</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hiermit stornieren wir die Beauftragung über hirewood vom X für die Vakanz X. \n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional):\n\nViele Grüße\n"
+                  "Goals: \n\n Topics: \n\n Action:\n\n\nViele Grüße\n"
                 );
                 autoResizeTextAreas();
               })
