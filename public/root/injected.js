@@ -570,14 +570,6 @@ window.addEventListener("load", async function (event) {
               })
           )
           .append(
-            $("<a><div>Rechnung<br/>senden</div></a>")
-              .attr({
-                href: "https://portal.payactive.io/dashboard/payments?action=new&agent=6103cee7c82e412669d255a8",
-              })
-              .attr({ target: "_blank" })
-              .addClass("message-button-link")
-          )
-          .append(
             $("<a>Datentransfer<br/>starten</a>")
               .attr({ href: "https://app.novospace.com/#/login" })
               .attr({ target: "_blank" })
