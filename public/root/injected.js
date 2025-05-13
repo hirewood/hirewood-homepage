@@ -533,20 +533,20 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Goals: \n\n Topics: \n\n Action:\n\n\nViele Grüße\n"
+                  "Goals: \n\nTopics: \n\nAction:\n\n\nViele Grüße\n"
                 );
                 autoResizeTextAreas();
               })
           )
           .append(
-            $("<a>Auftrag<br/>on hold</a>")
+            $("<a>Neue<br/>Absprache</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hiermit pausieren wir die Beauftragung über hirewood vom X für die Vakanz X.\n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional): \nWir bitten Sie, die Suche erst nach erneuter Beauftragung fortzusetzen.\n\nBegründung:\n\nViele Grüße"
+                  "Absprache zwischen: \nInhaltliche Änderung: \n(Optional: Projektnummer)\n\nBegründung:\n\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
