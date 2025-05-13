@@ -538,8 +538,6 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
-        )
-        
         .append(
             $("<a>Neue<br/>Absprache</a>")
               .attr({ href: "#" })
