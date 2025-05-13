@@ -538,7 +538,9 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
-          .append(
+      ) 
+      
+        .append(
             $("<a>Neue<br/>Absprache</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
@@ -551,8 +553,6 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
-      )
-
       .append(
         $("<div></div>")
           .addClass("message-selection-column")
@@ -568,12 +568,7 @@ window.addEventListener("load", async function (event) {
                 );
                 autoResizeTextAreas();
               })
-          )
-          .append(
-            $("<a>Datentransfer<br/>starten</a>")
-              .attr({ href: "https://app.novospace.com/#/login" })
-              .attr({ target: "_blank" })
-              .addClass("message-button-link")
+    
           )
       );
     // create the videocall button
