@@ -538,8 +538,8 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
-      ) 
-      
+        )
+        
         .append(
             $("<a>Neue<br/>Absprache</a>")
               .attr({ href: "#" })
@@ -553,7 +553,9 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
-      .append(
+        )
+        
+        .append(
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
