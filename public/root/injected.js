@@ -643,9 +643,9 @@ window.addEventListener("load", async function (event) {
     $(".left-navi-section h2").after(
       `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=hirewood" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h5>Factoring</h5>Mit unserem Payment-Partner für Factoring bieten wir den Boost für mehr Liquidität an. Rechnungen abgeben und den Betrag gegen eine Gebühr direkt auszahlen lassen.</div></div>`
     );
-    // Unsere AI Agenten
+    // AI Agenten
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=hirewood" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h5>Factoring</h5>Mit unseren AI Agenten können manuelle Prozesse schnell und effektiv gelöst werden. Wir arbeiten stetig an neuen Möglichkeiten. Es fehlt ein AI Agent? Wir setzen passende Ideen um ai@hirewood.com</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.wecreategrowth.com" target="_blank">AI Agenten</a></div><div class="transaction-explainer"><h5>AI Agenten</h5>Mit unseren AI Agenten können manuelle Prozesse schnell und effektiv gelöst werden. Wir arbeiten stetig an neuen Möglichkeiten. Es fehlt ein AI Agent? Wir setzen passende Ideen um ai@hirewood.com</div></div>`
     );
   }
 
