@@ -569,7 +569,6 @@ window.addEventListener("load", async function (event) {
                 );
                 autoResizeTextAreas();
               })
-    
           )
       );
     // create the videocall button
