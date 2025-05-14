@@ -632,7 +632,7 @@ window.addEventListener("load", async function (event) {
     //admin_transactions
     // novospace
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.novospace.com/" target="_blank">novospace</a></div><div class="transaction-explainer"><h5>Datenshare</h5>Über unseren Partner Novospace können Sie Daten in Silos teilen, zB je Kooperation. Dazu erstellen Sie per Klick einen Space je Projekt. Alles DSGVO konform, mit verschlüsselten Daten und Servern in Deutschland. So haben beide Parteien alle betreffenden Daten in einem Space. Registrieren Sie sich dazu kostenlos bei unserem Partner. Öffnen Sie den Space bequem im hirewood Chat und besprechen Sie Daten im hirewood Videocall.</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.novospace.com/" target="_blank">novospace</a></div><div class="transaction-explainer"><h5>Datenshare</h5>Über unseren Partner Novospace können Sie Daten wie Kandidaten-Profile mit Ihren Auftraggebern teilen. Dazu erstellen Sie per Klick einen Space je Auftraggeber. Alles DSGVO konform, mit verschlüsselten Daten und Servern in Deutschland. So haben beide Parteien alle betreffenden Kandidaten in einem Space. Registrieren Sie sich dazu kostenlos, kurz und knackig bei unserem Partner. Öffnen Sie den Space bequem im hirewood Chat und besprechen Sie Kandidaten im hirewood Video Call.</div></div>`
     );
     // refapp
     $(".left-navi-section h2").after(
@@ -640,16 +640,16 @@ window.addEventListener("load", async function (event) {
     );
     // aifinyo
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=hirewood" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h5>Factoring</h5>Mit unserem Payment-Partner für Factoring bieten wir den Boost für mehr Liquidität an. Rechnungen abgeben und den Betrag gegen eine Gebühr direkt auszahlen lassen.</div></div>`
-    );
-    // AI Agenten
-    $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.wecreategrowth.com" target="_blank">AI Agenten</a></div><div class="transaction-explainer"><h5>AI Agenten</h5>Mit unseren AI Agenten können manuelle Prozesse schnell und effektiv gelöst werden. Wir arbeiten stetig an neuen Möglichkeiten. Es fehlt ein AI Agent? Wir setzen passende Ideen um ai@hirewood.com</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=hirewood" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h5>Factoring</h5>Mit unserem Payment-Partner für Factoring bieten wir Personalberater:innen den digitalen Boost für mehr Liquidität an. Berater:innen bieten wir die Möglichkeit einer Honorar-Auszahlung innerhalb von 48 Stunden. Gleichzeitig genießen Unternehmen eine Zahlungsflexibilität von bis zu 90 Tagen.</div></div>`
     );
     // payactive
-$(".left-navi-section h2").after(
-`<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="${payactiveEndpointData.invitationUrl}" target="_blank">payactive</a></div><div class="transaction-explainer"><h5>E-Rechnungen</h5>Berater:innen bieten wir die Möglichkeit Rechnungen digital an Ihren Auftraggeber zu senden. Dazu können Berater:innen wie gewohnt ihre Rechnungen erstellen und auf payactive hochladen. Sobald die Rechnung versendet ist, werden die Berater:innen über den aktuellen Stand informiert.</div></div>`
-);
+    $(".left-navi-section h2").after(
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="${payactiveEndpointData.invitationUrl}" target="_blank">payactive</a></div><div class="transaction-explainer"><h5>E-Rechnungen</h5>Berater:innen bieten wir die Möglichkeit Rechnungen digital an Ihren Auftraggeber zu senden. Dazu können Berater:innen wie gewohnt ihre Rechnungen erstellen und auf payactive hochladen. Sobald die Rechnung versendet ist, werden die Berater:innen über den aktuellen Stand informiert.</div></div>`
+    );
+    // description
+    $(".left-navi-section h2").after(
+      `<p>Über folgende Links gelangen Sie zu unseren Kooperationspartnern, wo Sie sich in wenigen Schritten registrieren können.</p><p style="margin-bottom: 45px">Außerdem finden Sie hier weitere Informationen zum Payment über unsere Partner <a href="https://hirewood.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank" style="text-decoration: underline">HIER</a></p>`
+    );
   }
 
   // is create a new transaction page
