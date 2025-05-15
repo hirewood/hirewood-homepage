@@ -513,14 +513,14 @@ window.addEventListener("load", async function (event) {
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Kooperations<br/>Skizze</a>")
+            $("<a>Kooperation<br/>Skizze</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Skizzierte Kooperation\n\nID: (Projektnummer, wenn vorhanden)\n\nProjektziel:\n\nZeitraum: X - X \n\nFinanzielle Volumen: \n\nAnzahlung: X € / Erfolgsbasiert\n\nErgänzende Vereinbarung:\n\nViele Grüße"
+                  "Skizzierte Kooperation\n\nID: (Projektnummer, wenn vorhanden)\nProjektziel:\nZeitraum: X - X \nFinanzielle Volumen: \nAnzahlung: X € / Erfolgsbasiert\nErgänzende Vereinbarung:\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
@@ -538,8 +538,7 @@ window.addEventListener("load", async function (event) {
                 autoResizeTextAreas();
               })
           )
-        )
-        .append(
+          .append(
             $("<a>Neue<br/>Absprache</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
@@ -547,28 +546,34 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Absprache zwischen: \n\nInhaltliche Änderung: \n\n(Optional: Projektnummer)\n\nBegründung:\n\n\nViele Grüße"
+                  "Absprache zwischen: \nInhaltliche Änderung: \n(Optional: Projektnummer)\n\nBegründung:\n\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
           )
-        )
-        
-        .append(
+      )
+
+      .append(
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Anforderungs<br/>Profil</a>")
+            $("<a>Vakanz<br/>besetzt</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Anforderungen für eine Kooperation:\n\nDas Thema:\n\nDas Problem:\n\nMögliche Lösung:\n\nWeiteres Vorgehen:\n\nWir freuen uns über eine mögliche Zusammenarbeit\n\nVielen Dank\n"
+                  "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über hirewood.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
                 );
                 autoResizeTextAreas();
               })
+          )
+          .append(
+            $("<a>Datentransfer<br/>starten</a>")
+              .attr({ href: "https://app.novospace.com/#/login" })
+              .attr({ target: "_blank" })
+              .addClass("message-button-link")
           )
       );
     // create the videocall button
@@ -661,7 +666,7 @@ window.addEventListener("load", async function (event) {
 
   if (isGeneralTransactionsPage && isNewTransactionsPage) {
     $("#message").val(
-      "Hallo,\ngerne möchten wir Sie kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unser aktuelles Thema\n3. Absprache von Möglichkeiten\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen."
+      "Hallo,\ngerne möchten wir Sie im - Chat oder per Videocall - kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unsere aktuelle offene Vakanz\n3. Absprache der Konditionen\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen und würden Ihnen - nach einer erfolgreicher Absprache- gerne den Auftrag über hirewood erteilen."
     );
     autoResizeTextAreas();
   }
