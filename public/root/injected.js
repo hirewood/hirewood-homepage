@@ -546,7 +546,7 @@ window.addEventListener("load", async function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Absprache zwischen: \nInhaltliche Änderung: \n(Optional: Projektnummer)\n\nBegründung:\n\n\nViele Grüße"
+                  "Absprache zwischen: \n\nInhaltliche Änderung: \n\n(Optional: Projektnummer)\n\nBegründung:\n\n\nViele Grüße"
                 );
                 autoResizeTextAreas();
               })
@@ -557,14 +557,14 @@ window.addEventListener("load", async function (event) {
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Vakanz<br/>besetzt</a>")
+            $("<a>Job<br/>Präsentation</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über hirewood.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
+                  "Hast du Interesse an folgender Stelle?\n\nTitel:\n\nOrt:\n\nKurzbeschreibung:\n\nZielgehalt ca.: X €\n\nWir freuen uns über einen Austausch.\n\nBeste Grüße\n"
                 );
                 autoResizeTextAreas();
               })
