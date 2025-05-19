@@ -570,8 +570,8 @@ window.addEventListener("load", async function (event) {
               })
           )
           .append(
-            $("<a>Datentransfer<br/>starten</a>")
-              .attr({ href: "https://hirewood.com" })
+            $("<a>Support<br/>hirewood</a>")
+              .attr({ href: "https://www.wecreategrowth.eu/hw/kontakt" })
               .attr({ target: "_blank" })
               .addClass("message-button-link")
           )
