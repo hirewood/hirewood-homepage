@@ -570,20 +570,10 @@ window.addEventListener("load", async function (event) {
               })
           )
           .append(
-        $("<div></div>")
-          .addClass("message-selection-column")
-          .append(
-            $("<a>Job<br/>Angebot</a>")
-              .attr({ href: "#" })
+            $("<a>Datentransfer<br/>starten</a>")
+              .attr({ href: "https://hirewood.com" })
+              .attr({ target: "_blank" })
               .addClass("message-button-link")
-              .click(function (event) {
-                event.preventDefault();
-                attachMessage = true;
-                messageContentBox.val(
-                  "Job Angebot\n\nTitel:\n\nOrt:\n\nKurzbeschreibung:\n\nZielgehalt ca.: X €\n\nExtras:\n\nWir würden uns über eine Zusammenarbeit freuen.\n\nBeste Grüße\n"
-                );
-                autoResizeTextAreas();
-              })
           )
       );
     // create the videocall button
